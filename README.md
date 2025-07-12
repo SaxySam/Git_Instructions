@@ -930,7 +930,7 @@ Run `git remote show origin` to verify that the remote has been updated to the n
 
 ---
 
-## Hosting Multiple Separate Repositories under as branches under One
+## Hosting Multiple Separate Repositories as branches under One Repository
 
 If you run out of repository space or need to organise your repositories, you may want to merge multiple repositories into separate branches of a single repository.
 
