@@ -70,7 +70,9 @@ Before doing anything involving git, ensure that a .gitignore file is placed in 
 > This will stop unnecessary files from being pushed to your repository, and is essential for the following instructions in this document
 
 * <a href=https://github.com/github/gitignore/blob/main/Unity.gitignore>https://github.com/github/gitignore/blob/main/<b>Unity</b>.gitignore</a>
+* * [Unity gitignore Alternative Link](https://github.com/github/gitignore/blob/main/Unity.gitignore)
 * <a href=https://github.com/github/gitignore/blob/main/UnrealEngine.gitignore>https://github.com/github/gitignore/blob/main/<b>UnrealEngine</b>.gitignore</a>
+* * [Unreal Engine gitignore Alternative Link](https://github.com/github/gitignore/blob/main/UnrealEngine.gitignore)
 
 Gitignore templates for other project structures can be found below. Simply look for the file that has the structure **[your project language/software].gitignore**
 > [List of gitignore template files](https://github.com/github/gitignore/tree/main)
@@ -995,7 +997,9 @@ Source Control Branch Icon <i class="fa-solid fa-code-branch"></i>: <https://fon
 
 ---
 
-**<a href="https://github.com/SaxySam/Git_Instructions">"*GIT OVERVIEW AND SETUP INSTRUCTIONS*"</a> © 2025 by <a href="https://github.com/SaxySam">Samuel Kennedy</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">**
+**<a href="https://github.com/SaxySam/Git_Instructions">"*GIT OVERVIEW AND SETUP INSTRUCTIONS*"</a> © 2025 by <a href="https://github.com/SaxySam">Samuel Kennedy</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>**
+
+<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
 ***No AI slop was used in the creation of this document.***
 
