@@ -123,17 +123,17 @@ git remote add origin https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-
 
 ---
 
-#### *CUSTOMISED ENGGIT TERMINAL LINES FOR SKE131:*
+#### *PREFILLED ENGGIT TERMINAL LINES:*
 
 ```bash
 git init --initial-branch=main
-git config user.name "Samuel"
-git config user.email "ske131@uclive.ac.nz"
+git config user.name "YOUR-FIRST-NAME"
+git config user.email "YOUR-USER-CODE@uclive.ac.nz"
 git add .gitignore
 git add README.md
 git commit -m "First Commit - Added gitignore and README"
-git push --set-upstream https://eng-git.canterbury.ac.nz/ske131/YOUR-REPO-NAME main
-git remote add origin https://eng-git.canterbury.ac.nz/ske131/YOUR-REPO-NAME.git
+git push --set-upstream https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-NAME main
+git remote add origin https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-NAME.git
 ```
 
 ---
@@ -189,18 +189,18 @@ git push -u origin main
 
 ---
 
-#### *CUSTOMISED GITHUB TERMINAL LINES FOR SKE131:*
+#### *PREFILLED GITHUB TERMINAL LINES:*
 
-> **Create the Repository on <https://github.com/SaxySam?tab=repositories> first**
+> **Create the Repository on <https://github.com/dashboard> first**
 
 ```bash
 git init --initial-branch=main
-git config user.name "Samuel"
+git config user.name "YOUR-FIRST-NAME"
 git add .gitignore
 git add README.md
 git commit -m "First Commit - Added gitignore and README"
 git branch -M main
-git remote add origin https://github.com/SaxySam/YOUR-REPO-NAME.git
+git remote add origin https://github.com/YOUR-GIT-NAME/YOUR-REPO-NAME.git
 git remote -v
 git push --set-upstream origin main
 ```
