@@ -220,6 +220,8 @@ git remote add origin https://github.com/YOUR-GIT-NAME/YOUR-REPO-NAME.git
 
 * *The URL for* `git remote add origin` *can be found at the top of a new blank git repo on* [github.com](https://github.com/)
 
+* *If the Git Credentials Manager window appears, enter your credentials and sign in.*
+
 **Step 5)** Enter the following line:
 
 ```bash
