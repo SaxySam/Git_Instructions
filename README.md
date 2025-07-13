@@ -98,11 +98,12 @@ The second piece of software that is necessary for following through this docume
 Before doing anything involving git, ensure that a .gitignore file is placed in the directory of the Unity or Unreal project that you wish to upload.
 > This will stop unnecessary files from being pushed to your repository, and is essential for the following instructions in this document
 
-* [*Unity* gitignore Template](https://github.com/github/gitignore/blob/main/Unity.gitignore)
-* [*Unreal Engine* gitignore Template](https://github.com/github/gitignore/blob/main/UnrealEngine.gitignore)
+* **Unity:** [*Unity* gitignore Template](https://github.com/github/gitignore/blob/main/Unity.gitignore)
+* **Unreal Engine:** [*Unreal Engine* gitignore Template](https://github.com/github/gitignore/blob/main/UnrealEngine.gitignore)
 
 Gitignore templates for other project structures can be found below. Simply look for the file that has the structure **[your project language/software].gitignore**
-> [List of gitignore template files](https://github.com/github/gitignore/tree/main)
+
+> [*List of gitignore template files*](https://github.com/github/gitignore/tree/main)
 
 ---
 
