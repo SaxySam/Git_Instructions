@@ -8,7 +8,8 @@
 
 ---
 
-**To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint).**
+**To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint).** ***Each markdown view has its own quirks and handling methods, and as such may encounter slight differences.***
+
 * **GitHub** and **GitLab** both have built-in Markdown previews for files named "README.md"; however, both use the custom *GitHub Flavoured Markdown* (GFM) variant of the markdown format, and as such, some links and extra visibility elements may not function correctly.
 
 ---
@@ -26,12 +27,19 @@ Think of it like a cloud storage service like Microsoft's *OneDrive*, allowing y
 
 Git works by creating a *hidden folder* in the root directory of your project, which keeps track of all files and subsequently each change made to those files locally.
 
+<details>
+<summary><b> How do I view the hidden git folder? </b></summary>
+
 > * This folder can be viewed on Windows systems by navigating to the root directory of the project in the File Explorer, then selecting "View" > "Show", and selecting "Hidden Items" to toggle the visibility of hidden files.
 > * This folder can be viewed on MacOS systems by navigating to the root directory of the project in the Finder and executing *Command + Shift + Period* to toggle the visibility of hidden files.
 > * This folder can be viewed on Linux systems in the GUI by navigating to the root directory of the project in the File Manager, selecting "Menu" or "View" (depending on distribution), and then selecting "Show Hidden Files"
 >   * Alternatively, the `ls -a` terminal command will list all files in a directory, including hidden files
 
 * A greyed out folder titled ".git" should appear in the root directory using any of the three methods listed above, or in the command output if using the terminal.
+
+</details>
+
+>
 
 The same git project may be cloned in multiple places or by multiple users, each with unique changes, however these changes will remain locally on the machine until they are uploaded or "*pushed*" to the remote *repository*, in which case the changes can be added to or "*merged*" into the main file structure, overwriting any existing files with updated versions containing uploaded changes. These new changes will then become available to all other copies of the project by downloading or "*pulling*" the new changes.
 
@@ -1007,3 +1015,5 @@ Source Control Branch Icon <i class="fa-solid fa-code-branch"></i>: <https://fon
 ***No AI slop was used in the creation of this document.***
 
 ---
+
+[***Back To Top***](#git-overview-and-setup-instructions)
