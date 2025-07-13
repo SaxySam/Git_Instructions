@@ -21,7 +21,7 @@
 
 *Git* is an open-source version control system that allows users to work independently or collaboratively on a project across multiple devices while maintaining changes made to a project between devices and users.
 
-Think of it like a cloud storage service like Microsoft's *OneDrive*, allowing you to upload and download changes. The key difference being that git offers a much wider range of flexibility and control over which files are uploaded, the way files are uploaded, as well as providing numerous usages and ways of modiying files for different projects.
+Think of it like a cloud storage service like Microsoft's *OneDrive*, allowing you to upload and download changes. The key difference being that git offers a much wider range of flexibility and control over which files are uploaded, the way files are uploaded, as well as providing numerous usages and ways of modifying files for different projects.
 
 ### How Git Works?
 
@@ -135,7 +135,7 @@ Gitignore templates for other project structures can be found below. Simply look
 
 **Step 3)** Initializing the Repository:
 
-> While you can initialise a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>), this only executres the first command line from the following block, and you get more control over specific details by creating it from the command line.
+> While you can initialize a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>), this only executes the first command line from the following block, and you get more control over specific details by creating it from the command line.
 
 Enter the following commands line by line:
 
@@ -1028,7 +1028,7 @@ To do this, create a new empty repository and run the following terminal command
 git init --initial-branch=main
 git config user.name "NAME"
 git config user.email "YOUR-USER-CODE@uclive.ac.nz"
-ggit commit --allow-empty -m "Initial dummy commit"
+git commit --allow-empty -m "Initial dummy commit"
 ```
 
 * Switch back to *main* before the next set of steps
