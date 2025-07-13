@@ -2,7 +2,7 @@
 
 ***Authored by Samuel Kennedy - Ske131***
 
-> Include this file in the root directory of your repository for quick access
+> Include this file in the root directory of your repository for quick access, or follow the [Git Repository Link](https://github.com/SaxySam/Git_Instructions) for the most recent update.
 
 * **Disclaimer**: This is by no means an exhaustive list; however, it should get you started using git and solving some of the most common problems encountered.
 
