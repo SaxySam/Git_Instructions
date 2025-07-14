@@ -8,7 +8,7 @@
 
 ---
 
-**To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint).** ***Each markdown viewer has its own quirks and handling methods, and as such may encounter slight differences.***
+**To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced).** ***Each markdown viewer has its own quirks and handling methods, and as such may encounter slight differences.***
 
 * **GitHub** and **GitLab** both have built-in Markdown previews for files named "README.md"; however, both use the custom *GitHub Flavoured Markdown* (GFM) variant of the markdown format, and as such, some links and extra visibility elements may not function correctly.
 
