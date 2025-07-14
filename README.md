@@ -2,13 +2,13 @@
 
 ***Authored by Samuel Kennedy - Ske131***
 
-> Include this file in the root directory of your repository for quick access
+> Include this file in the root directory of your repository for quick access, or follow the [Git Repository Link](https://github.com/SaxySam/Git_Instructions) for the most recent update.
 
 * **Disclaimer**: This is by no means an exhaustive list; however, it should get you started using git and solving some of the most common problems encountered.
 
 ---
 
-**To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint).** ***Each markdown view has its own quirks and handling methods, and as such may encounter slight differences.***
+**To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced).** ***Each markdown viewer has its own quirks and handling methods, and as such may encounter slight differences.***
 
 * **GitHub** and **GitLab** both have built-in Markdown previews for files named "README.md"; however, both use the custom *GitHub Flavoured Markdown* (GFM) variant of the markdown format, and as such, some links and extra visibility elements may not function correctly.
 
@@ -21,7 +21,7 @@
 
 *Git* is an open-source version control system that allows users to work independently or collaboratively on a project across multiple devices while maintaining changes made to a project between devices and users.
 
-Think of it like a cloud storage service like Microsoft's *OneDrive*, allowing you to upload and download changes. The key difference being that git offers a much wider range of flexibility and control over which files are uploaded, the way files are uploaded, as well as providing numerous usages and ways of modiying files for different projects.
+Think of it like a cloud storage service like Microsoft's *OneDrive*, allowing you to upload and download changes. The key difference being that git offers a much wider range of flexibility and control over which files are uploaded, the way files are uploaded, as well as providing numerous usages and ways of modifying files for different projects.
 
 ### How Git Works?
 
@@ -29,6 +29,8 @@ Git works by creating a *hidden folder* in the root directory of your project, w
 
 <details>
 <summary><b> How do I view the hidden git folder? </b></summary>
+
+>
 
 > * This folder can be viewed on Windows systems by navigating to the root directory of the project in the File Explorer, then selecting "View" > "Show", and selecting "Hidden Items" to toggle the visibility of hidden files.
 > * This folder can be viewed on MacOS systems by navigating to the root directory of the project in the Finder and executing *Command + Shift + Period* to toggle the visibility of hidden files.
@@ -53,7 +55,16 @@ Each repository has a unique *pointer*, *name*, and *domain*, meaning you cannot
 
 The two repository hosting websites you are most likely to use are **GitHub** (<https://github.com/>) and **GitLab** (<https://gitlab.com/>); more specifically, the University of Canterbury GitLab host: **EngGit** (<https://eng-git.canterbury.ac.nz/>).
 
-> These websites not only provide a convenient place to upload and download repositories from, but also provide an easy way to view and manage a repository's file structure, change history, and settings without having to use the terminal or create your own system.
+<details>
+<summary><b> Why do I need a repository host? </b></summary>
+
+>
+
+> These websites not only provide a convenient place to upload and download repositories to and from multiple devices, but also provide an easy way to view and manage a repository's file structure, change history, and settings without having to use the terminal or create your own system, as well as easily collaborate with other people on the same project.
+
+</details>
+
+>
 
 As such, this document covers steps for practices applicable to both hosts; however, most steps should be transferrable to any repository host or any use of the terminal.
 
@@ -69,22 +80,30 @@ Like any software, Git needs to be installed locally to any machine before being
 
 The second piece of software that is necessary for following through this document is *Visual Studio Code* (*VS Code* or *VSC* for short). VSC is an open source *Integrated Development Environment* (IDE) which has support for and integrations with many different languages and applications, as well as a large collection of user-made extensions. As such, it provides a convenient place to manage both code-related projects and git integration in a single application. Visual Studio Code can be [downloaded here](https://code.visualstudio.com/Download), and provides a helpful page on [Documentation](https://code.visualstudio.com/docs) to get you started.
 
+<details>
+<summary><b> Why should I use Visual Studio Code? </b></summary>
+
+>
+
 > There are many other fantastic tools for managing both code projects and git repositories. I find that VSC provides the best experience and the most user flexibility; however, other IDEs such as [*Visual Studio Community*](https://visualstudio.microsoft.com/downloads/) or [*JetBrains Rider*](https://www.jetbrains.com/rider/download/) provide similar functionality.
 >
 > There is also the standalone [GitHub Desktop](https://desktop.github.com/download/) application for a more streamlined and hands-off approach to git (however, there isn't as much flexibility in some places; a tradeoff in order to make the introduction to git less technical)
+
+</details>
+
+>
 
 ### Add a gitignore
 
 Before doing anything involving git, ensure that a .gitignore file is placed in the directory of the Unity or Unreal project that you wish to upload.
 > This will stop unnecessary files from being pushed to your repository, and is essential for the following instructions in this document
 
-* <a href=https://github.com/github/gitignore/blob/main/Unity.gitignore>https://github.com/github/gitignore/blob/main/<b>Unity</b>.gitignore</a>
-* * [Unity gitignore Alternative Link](https://github.com/github/gitignore/blob/main/Unity.gitignore)
-* <a href=https://github.com/github/gitignore/blob/main/UnrealEngine.gitignore>https://github.com/github/gitignore/blob/main/<b>UnrealEngine</b>.gitignore</a>
-* * [Unreal Engine gitignore Alternative Link](https://github.com/github/gitignore/blob/main/UnrealEngine.gitignore)
+* **Unity:** [*Unity* gitignore Template](https://github.com/github/gitignore/blob/main/Unity.gitignore)
+* **Unreal Engine:** [*Unreal Engine* gitignore Template](https://github.com/github/gitignore/blob/main/UnrealEngine.gitignore)
 
 Gitignore templates for other project structures can be found below. Simply look for the file that has the structure **[your project language/software].gitignore**
-> [List of gitignore template files](https://github.com/github/gitignore/tree/main)
+
+> [*List of gitignore template files*](https://github.com/github/gitignore/tree/main)
 
 ---
 
@@ -94,12 +113,21 @@ Gitignore templates for other project structures can be found below. Simply look
 
 **Step 1)** Open the Unity Project in Visual Studio Code. There are two ways to do this:
 
-* In Visual Studio Code: File -> Open Folder -> (Directory of the project) -> Open.
-* In *Unity*, go to File -> "Preferences" and ensure that under "External Tools", Visual Studio Code is selected as your External Script Editor. Next, right-click in the Assets window and click "Open C# Project". This will open the entire project in Visual Studio Code and prompt you to install the required [*C# Extension*](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) and [*Unity Extension*](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc).
+1. In Visual Studio Code: File -> Open Folder -> (Directory of the project) -> Open.
+2. In *Unity*, go to File -> "Preferences" and ensure that under "External Tools", Visual Studio Code is selected as your External Script Editor. Next, right-click in the Assets window and click "Open C# Project". This will open the entire project in Visual Studio Code and prompt you to install the required [*C# Extension*](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) and [*Unity Extension*](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc).
 
-*Unreal Engine* uses Visual Studio Community by default. However, if you wish to change the default IDE to Visual Studio Code, you can follow the instructions linked below. Using Visual Studio Community for code editing and Visual Studio Code for Version Control will not cause any problems in your workflow.
+<details>
+<summary><b> What about Unreal Engine? </b></summary>
 
-* <https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine>
+>
+
+*Unreal Engine* uses Visual Studio Community by default. However, if you wish to change the default IDE to Visual Studio Code, you can follow the instructions linked below. *Using Visual Studio Community for code editing and Visual Studio Code for Version Control will **not** cause any problems in your workflow.*
+
+* [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
+
+</details>
+
+>
 
 **Step 2)** In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal".
 
@@ -107,7 +135,7 @@ Gitignore templates for other project structures can be found below. Simply look
 
 **Step 3)** Initializing the Repository:
 
-> While you can initialise a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>), this only executres the first command line from the following block, and you get more control over specific details by creating it from the command line.
+> While you can initialize a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>), this only executes the first command line from the following block, and you get more control over specific details by creating it from the command line.
 
 Enter the following commands line by line:
 
@@ -157,12 +185,21 @@ git remote add origin https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-
 
 **Step 2)** Open the Unity Project in Visual Studio Code. There are two ways to do this:
 
-* In Visual Studio Code: File -> Open Folder -> (Directory of the project) -> Open.
-* In *Unity*, go to File -> "Preferences" and ensure that under "External Tools", Visual Studio Code is selected as your External Script Editor. Next, right click in the Assets window and click "Open C# Project". This will open the entire project in Visual Studio Code and prompt you to install the required [*C# Extension*](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) and [*Unity Extension*](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc).
+1. In Visual Studio Code: File -> Open Folder -> (Directory of the project) -> Open.
+2. In *Unity*, go to File -> "Preferences" and ensure that under "External Tools", Visual Studio Code is selected as your External Script Editor. Next, right-click in the Assets window and click "Open C# Project". This will open the entire project in Visual Studio Code and prompt you to install the required [*C# Extension*](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) and [*Unity Extension*](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc).
+
+<details>
+<summary><b> What about Unreal Engine? </b></summary>
+
+>
 
 *Unreal Engine* uses Visual Studio Community by default. However, if you wish to change the default IDE to Visual Studio Code, you can follow the instructions linked below. Using Visual Studio Community for code editing and Visual Studio Code for Version Control will not cause any problems in your workflow.
 
-* <https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine>
+* [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
+
+</details>
+
+>
 
 **Step 3)** In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal" to open a new terminal.
 
@@ -183,6 +220,8 @@ git remote add origin https://github.com/YOUR-GIT-NAME/YOUR-REPO-NAME.git
 ```
 
 * *The URL for* `git remote add origin` *can be found at the top of a new blank git repo on* [github.com](https://github.com/)
+
+* *If the Git Credentials Manager window appears, enter your credentials and sign in.*
 
 **Step 5)** Enter the following line:
 
@@ -252,6 +291,7 @@ This will be in the format:
 >
 > This can be found on the **GitHub** website by opening a project, clicking the dropdown arrow on the large green "Code" button, and copying the URL under the "HTTPS" header.
 > > This URL can also be found in the address or URL bar in a browser when viewing a project.
+>
 
 ### Cloning Using the Visual Studio Code UI
 
@@ -267,7 +307,6 @@ This will be in the format:
 **Step 1)** In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal".
 
 > This should ideally be a PowerShell or (Git)Bash terminal to avoid platform-specific syntax errors and inconsistencies.
-Run the following terminal command:
 
 **Step 2)** Enter the following line into the terminal with the URL for your project.
 
@@ -351,6 +390,7 @@ To add a commit message to the push using the terminal, run the following comman
 ```bash
 git commit -m "[Commit Message]"
 ```
+>
 
 > **Make sure to include the quotation marks around the commit message; otherwise, the command will not enter correctly.**
 
@@ -549,7 +589,7 @@ Four text options will appear above the highlighted text:
 * **Compare Changes** will open both the local and remote versions of the file side-by-side to more easily compare changes on the same line. Removed lines will appear highlighted in <span style="background-color:red;color:white">red</span>, whereas added lines will appear highlighted in <span style="background-color:green;color:white">green</span>.
 
 ***Once all conflicts have been resolved, you must stage the affected files and commit them as a new push.
-The commit message will be autofilled in the format `"Merge Branch '[affected branch]' into [current branch]`***
+The commit message will be autofilled in the format `"Merge Branch '[affected branch]' into '[current branch]'`***
 
 #### Three-Way Editor Method
 
@@ -634,7 +674,7 @@ A branch is like a secondary, parallel root folder of your repository that allow
 
 #### Creating New Branches on EngGit
 
-* On the EngGit website, open your project.
+On the EngGit website, open your project.
 
 To **view your existing branches** or switch to a different branch, select the button underneath the project icon and name with the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". This will list all of your current branches, as well as the default branch. Select any of the listed branches to switch into it.
 
@@ -764,9 +804,18 @@ This will reset the state of git to one commit back, bringing back your changes 
 
 If you want to ignore a file and stop it from being pushed to the remote repository, you can add it to your project's .gitignore
 
+<details>
+<summary><b> What if I don't have a .gitignore file? </b></summary>
+
+>
+
 > If you need a gitignore template, you can find one from the [List of gitignore template files](https://github.com/github/gitignore/tree/main).
 >
 > You can also create a new blank one by running the terminal command `touch .gitignore` in a **Git(Bash) Terminal**.
+
+</details>
+
+>
 
 To ignore a file, you can add its filepath to the .gitignore directly, or use one of the more technical file searching patterns as shown in the example below from the documentation:
 
@@ -854,6 +903,11 @@ This will check that multiple remotes have been setup correctly.
 
 ### Example: Setting a Remote from GitHub to push to both GitHub and EngGit
 
+<details>
+<summary><b> Show Code Block </b></summary>
+
+>
+
 ```bash
 git remote get-url origin
 git remote rename origin GitHub
@@ -863,7 +917,16 @@ git remote set-url --add --push origin <GitHub URL>
 git remote set-url --add --push origin <EngGit URL>
 ```
 
+</details>
+
+>
+
 ### Example: Setting a Remote from EngGit to push to both EngGit and GitHub
+
+<details>
+<summary><b> Show Code Block </b></summary>
+
+>
 
 ```bash
 git remote get-url origin
@@ -873,6 +936,10 @@ git remote add origin <EngGit URL>
 git remote set-url --add --push origin <EngGit URL>
 git remote set-url --add --push origin <GitHub URL>
 ```
+
+</details>
+
+>
 
 > Adapted from: [*Pushing to multiple git remotes simultaneously by Jeff Kreeftmeijer*](https://jeffkreeftmeijer.com/git-multiple-remotes/#fnr.2)
 
@@ -892,7 +959,16 @@ Migrating a repository will bring everything within the project, including all f
 
 **Step 3)** In the provided fields, enter the **EngGit repository URL** in the field labelled "*The URL for your source repository*", and **your EngGit credentials** in the fields labelled "*Your username for your source repository*" and "*Your access token or password for your source repository*" respectively.
 
-> This is essential as your EngGit account is protected by the University of Canterbury, and as such, you cannot make repositories private. If simply importing from GitLab itself, you may not need to do this.
+<details>
+<summary><b> Why do I need to enter my credentials? </b></summary>
+
+>
+
+> This is essential as your EngGit account is protected by the University of Canterbury, and as such, you cannot make repositories public; as repositories hosted on EngGit can *only* be accessed by University of Canterbury personnel. If simply importing from GitLab itself, you may not need to do this.
+
+</details>
+
+>
 
 Under the heading "**Your new repository details**", set the **name of the project** in the field labelled "*Repository name*".
 
@@ -946,13 +1022,13 @@ If you run out of repository space or need to organise your repositories, you ma
 
 To do this, create a new empty repository and run the following terminal commands:
 
-> For this set of commands, it is very important to use a PowerShell or Git(Bash) terminal, or else one of the lines will not execute.
+> For this set of commands, it is **very important** to use a PowerShell or Git(Bash) terminal, or else one of the lines will not execute.
 
 ```bash
 git init --initial-branch=main
 git config user.name "NAME"
 git config user.email "YOUR-USER-CODE@uclive.ac.nz"
-ggit commit --allow-empty -m "Initial dummy commit"
+git commit --allow-empty -m "Initial dummy commit"
 ```
 
 * Switch back to *main* before the next set of steps
