@@ -507,7 +507,7 @@ Once the files are under the heading "*Staged Changes*", enter a message into th
 
 Before you can push changes, you must *stage* them, or prepare them for upload
 
-To stage a specific changed file using the terminal,, run the following terminal commands.
+To **stage** a specific changed file using the terminal,, run the following terminal commands.
 
 ```bash
 git add [Filename]
