@@ -162,7 +162,7 @@ git remote add origin https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-
 
 ---
 
-#### *PREFILLED ENGGIT TERMINAL LINES:*
+#### *PREFILLED TERMINAL LINES FOR ENGGIT:*
 
 ```bash
 git init --initial-branch=main
@@ -239,7 +239,7 @@ git push -u origin main
 
 ---
 
-#### *PREFILLED GITHUB TERMINAL LINES:*
+#### *PREFILLED TERMINAL LINES FOR GITHUB:*
 
 > **Create the Repository on <https://github.com/dashboard> first**
 
@@ -1014,7 +1014,7 @@ Run `git remote show origin` to verify that the remote has been updated to the n
 
 ---
 
-## Hosting Multiple Separate Repositories as branches under One Repository
+## Merging Multiple Separate Repositories into branches under One Single Repository
 
 If you run out of repository space or need to organise your repositories, you may want to merge multiple repositories into separate branches of a single repository.
 
