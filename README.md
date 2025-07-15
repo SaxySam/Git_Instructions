@@ -8,6 +8,112 @@
 
 ---
 
+## Table of Contents
+
+**Select any of the below links to navigate to that section of this document**
+
+> You can also execute *Control + T | Command + T* or select the select the search bar at the top of the window to view and navigate different sections of this document.
+
+1. [GIT OVERVIEW AND SETUP INSTRUCTIONS](#git-overview-and-setup-instructions)
+2. [Table of Contents](#table-of-contents) - **You are here**
+3. [Forward](#forward)
+4. [Viewing this Document](#viewing-this-document)
+5. [What is Git?](#what-is-git)
+    * [How Git Works](#how-git-works)
+    * [What is a Repository](#what-is-a-repository)
+6. [Pre-Setup](#pre-setup)
+    * [Install Git](#install-git)
+    * [Install Visual Studio Code](#install-visual-studio-code)
+    * [Add a .gitignore](#add-a-gitignore)
+7. [EngGit Setup Instructions](#enggit-setup-instructions)
+    * [Creating a new Repository on EngGit using Visual Studio Code](#creating-a-new-repository-on-enggit-using-visual-studio-code)
+        * [Prefilled Terminal Lines for EngGit](#prefilled-terminal-lines-for-enggit)
+8. [GitHub Setup Instructions](#github-setup-instructions)
+    * [Creating a new Repository on GitHub using Visual Studio Code](#creating-a-new-repository-on-github-using-visual-studio-code)
+        * [Prefilled Terminal Lines for GitHub](#prefilled-terminal-lines-for-github)
+9. [Preparing Visual Studio Code for Use with Unity](#preparing-visual-studio-code-for-use-with-unity)
+10. [Cloning (Downloading) a Repository](#cloning-downloading-a-repository)
+    * [Locating the Repository URL](#locating-the-repository-url)
+    * [Cloning Using the Visual Studio Code UI](#cloning-using-the-visual-studio-code-ui)
+    * [Cloning Using the Terminal](#cloning-using-the-terminal)
+11. [Viewing Uncommitted Git Changes](#viewing-uncommitted-git-changes)
+    * [Viewing Git Changes using the Visual Studio Code UI](#viewing-git-changes-using-the-visual-studio-code-ui)
+    * [Viewing Git Changes using the Terminal](#viewing-git-changes-using-the-terminal)
+12. [Staging and Pushing (Uploading) Changes](#staging-and-pushing-uploading-changes)
+    * [Pushing Changes Using the Visual Studio Code UI](#pushing-changes-using-the-visual-studio-code-ui)
+    * [Pushing Changes Using the Terminal](#pushing-changes-using-the-terminal)
+13. [Un-Staging Changes](#un-staging-changes)
+    * [Un-Staging Changes Using the Visual Studio Code UI](#un-staging-changes-using-the-visual-studio-code-ui)
+    * [Un-Staging Changes Using the Terminal](#un-staging-changes-using-the-terminal)
+14. [Discarding Changes](#discarding-changes)
+    * [Discarding Changes Using the Visual Studio Code UI](#discarding-changes-using-the-visual-studio-code-ui)
+    * [Discarding Changes Using the Terminal](#discarding-changes-using-the-terminal)
+15. [Stashing and Popping Changes](#stashing-and-popping-changes)
+    * [Stashing Changes Using the Visual Studio Code UI](#stashing-changes-using-the-visual-studio-code-ui)
+    * [Popping Stashed Changes Using the Visual Studio Code UI](#popping-stashed-changes-using-the-visual-studio-code-ui)
+    * [Stashing Changes Using the Terminal](#stashing-changes-using-the-terminal)
+    * [Popping Changes Using the Terminal](#popping-changes-using-the-terminal)
+16. [Pulling Changes](#pulling-changes)
+    * [Pulling Using the Visual Studio Code UI](#pulling-using-the-visual-studio-code-ui)
+    * [Pulling Using the Terminal](#pulling-using-the-terminal)
+17. [Dealing with Clashes and Merge Conflicts](#dealing-with-clashes-and-merge-conflicts)
+    * [Dealing with Merge Conflicts using the Visual Studio Code UI](#dealing-with-merge-conflicts-using-the-visual-studio-code-ui)
+        * [In-Line Editor Method](#in-line-editor-method)
+        * [Three-Way Editor Method](#three-way-editor-method)
+18. [Adding Collaborators to a Repository](#adding-collaborators-to-a-repository)
+    * [Adding Collaborators on EngGit](#adding-collaborators-on-enggit)
+    * [Adding Collaborators on GitHub](#adding-collaborators-on-github)
+19. [Changing a Git Commit Message](#changing-a-git-commit-message)
+20. [Git Branches](#git-branches)
+    * [Creating New Branches](#creating-new-branches)
+        * [Local Remote Branch Creation](#local-remote-branch-creation)
+            * [Creating a New Branch through the Visual Studio Code UI](#creating-a-new-branch-through-the-visual-studio-code-ui)
+            * [Creating a New Branch through the Terminal](#creating-a-new-branch-through-the-terminal)
+        * [Host Website Branch Creation](#host-website-branch-creation)
+            * [Creating a New Branch on EngGit](#creating-a-new-branch-on-enggit)
+            * [Creating a new Branch on GitHub](#creating-a-new-branch-on-github)
+    * [Checking for Newly Created branches](#checking-for-newly-created-branches)
+    * [Switching Branches](#switching-branches)
+        * [Switching Branches using the Visual Studio Code UI](#switching-branches-using-the-visual-studio-code-ui)
+        * [Switching Branches using the Terminal](#switching-branches-using-the-terminal)
+    * [Renaming Branches](#renaming-branches)
+        * [Renaming Branches using the Visual Studio Code UI](#renaming-branches-using-the-visual-studio-code-ui)
+        * [Renaming Branches using the Terminal](#renaming-branches-using-the-terminal)
+            * [Renaming a Local Branch](#renaming-a-local-branch)
+            * [Renaming a Remote Branch](#renaming-a-remote-branch)
+    * [Deleting Branches](#deleting-branches)
+        * [Deleting Branches Locally](#deleting-branches-locally)
+            * [Deleting Branches using the Visual Studio Code UI](#deleting-branches-using-the-visual-studio-code-ui)
+            * [Deleting Branches using the Terminal](#deleting-branches-using-the-terminal)
+        * [Deleting Branches on a Host Website](#deleting-branches-on-a-host-website)
+            * [Deleting Branches on EngGit](#deleting-branches-on-enggit)
+            * [Deleting Branches on GitHub](#deleting-branches-on-github)
+21. [Configuring Git Large File Systems](#configuring-git-large-file-systems)
+22. [Restoring / Un-committing Committed Changes](#restoring--un-committing-committed-changes)
+23. [Adding a file to the .gitignore](#adding-a-file-to-the-gitignore)
+24. [Pushing a Repository to / Hosting on Multiple Remotes](#pushing-a-repository-to--hosting-on-multiple-remotes)
+    * [Example: Setting a Remote from EngGit to push to both EngGit and GitHub](#example-setting-a-remote-from-enggit-to-push-to-both-enggit-and-github)
+    * [Example: Setting a Remote from GitHub to push to both GitHub and EngGit](#example-setting-a-remote-from-github-to-push-to-both-github-and-enggit)
+25. [Migrating a Repository](#migrating-a-repository)
+    * [Moving from EngGit to GitHub](#moving-from-enggit-to-github)
+    * [Moving from GitHub to EngGit](#moving-from-github-to-enggit)
+    * [Updating URL after migration](#updating-url-after-migration)
+26. [Merging Multiple Separate Repositories into branches under One Single Repository](#merging-multiple-separate-repositories-into-branches-under-one-single-repository)
+27. [Useful Links](#useful-links)
+28. [Copyright Information](#copyright-information)
+
+---
+
+## Forward
+
+This document outlines steps and instructions for using git to manage both solo and collaborative projects, from an explanation and setup to covering some of the most commonly encountered problems. It details instructions using both Visual Studio Code and the terminal, as well as instructions for the two most common repository hosting websites: GitLab (EngGit) and GitHub. Think of it like a cheat sheet or reference for anything git related.
+
+While the Visual Studio Code implementation provides a very helpful visual guide, the terminal commands often allow more control and flexibility, and can be used within any IDE or outside of one entirely. As such, some sections of this document are only able to be followed by using the terminal, as the UI lacks a direct counterpart.
+
+---
+
+## Viewing this Document
+
 **To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced).** ***Each markdown viewer has its own quirks and handling methods, and as such may encounter slight differences.***
 
 * **GitHub** and **GitLab** both have built-in Markdown previews for files named "README.md"; however, both use the custom *GitHub Flavoured Markdown* (GFM) variant of the markdown format, and as such, some links and extra visibility elements may not function correctly.
@@ -30,8 +136,6 @@ Git works by creating a *hidden folder* in the root directory of your project, w
 <details>
 <summary><b> How do I view the hidden git folder? </b></summary>
 
->
-
 > * This folder can be viewed on Windows systems by navigating to the root directory of the project in the File Explorer, then selecting "View" > "Show", and selecting "Hidden Items" to toggle the visibility of hidden files.
 > * This folder can be viewed on MacOS systems by navigating to the root directory of the project in the Finder and executing *Command + Shift + Period* to toggle the visibility of hidden files.
 > * This folder can be viewed on Linux systems in the GUI by navigating to the root directory of the project in the File Manager, selecting "Menu" or "View" (depending on distribution), and then selecting "Show Hidden Files"
@@ -40,8 +144,7 @@ Git works by creating a *hidden folder* in the root directory of your project, w
 * A greyed out folder titled ".git" should appear in the root directory using any of the three methods listed above, or in the command output if using the terminal.
 
 </details>
-
->
+<br>
 
 The same git project may be cloned in multiple places or by multiple users, each with unique changes, however these changes will remain locally on the machine until they are uploaded or "*pushed*" to the remote *repository*, in which case the changes can be added to or "*merged*" into the main file structure, overwriting any existing files with updated versions containing uploaded changes. These new changes will then become available to all other copies of the project by downloading or "*pulling*" the new changes.
 
@@ -58,13 +161,10 @@ The two repository hosting websites you are most likely to use are **GitHub** (<
 <details>
 <summary><b> Why do I need a repository host? </b></summary>
 
->
-
 > These websites not only provide a convenient place to upload and download repositories to and from multiple devices, but also provide an easy way to view and manage a repository's file structure, change history, and settings without having to use the terminal or create your own system, as well as easily collaborate with other people on the same project.
 
 </details>
-
->
+<br>
 
 As such, this document covers steps for practices applicable to both hosts; however, most steps should be transferrable to any repository host or any use of the terminal.
 
@@ -76,24 +176,25 @@ As such, this document covers steps for practices applicable to both hosts; howe
 
 Like any software, Git needs to be installed locally to any machine before being able to use it. Git can be downloaded and run on any Windows, MacOS, or Linux device, and can be [downloaded here](https://git-scm.com/downloads).
 
+> This will already be installed on university computers
+
 ### Install Visual Studio Code
 
 The second piece of software that is necessary for following through this document is *Visual Studio Code* (*VS Code* or *VSC* for short). VSC is an open source *Integrated Development Environment* (IDE) which has support for and integrations with many different languages and applications, as well as a large collection of user-made extensions. As such, it provides a convenient place to manage both code-related projects and git integration in a single application. Visual Studio Code can be [downloaded here](https://code.visualstudio.com/Download), and provides a helpful page on [Documentation](https://code.visualstudio.com/docs) to get you started.
 
+> This will already be installed on university computers
+
 <details>
 <summary><b> Why should I use Visual Studio Code? </b></summary>
-
->
 
 > There are many other fantastic tools for managing both code projects and git repositories. I find that VSC provides the best experience and the most user flexibility; however, other IDEs such as [*Visual Studio Community*](https://visualstudio.microsoft.com/downloads/) or [*JetBrains Rider*](https://www.jetbrains.com/rider/download/) provide similar functionality.
 >
 > There is also the standalone [GitHub Desktop](https://desktop.github.com/download/) application for a more streamlined and hands-off approach to git (however, there isn't as much flexibility in some places; a tradeoff in order to make the introduction to git less technical)
 
 </details>
+<br>
 
->
-
-### Add a gitignore
+### Add a .gitignore
 
 Before doing anything involving git, ensure that a .gitignore file is placed in the directory of the Unity or Unreal project that you wish to upload.
 > This will stop unnecessary files from being pushed to your repository, and is essential for the following instructions in this document
@@ -119,25 +220,28 @@ Gitignore templates for other project structures can be found below. Simply look
 <details>
 <summary><b> What about Unreal Engine? </b></summary>
 
->
-
 *Unreal Engine* uses Visual Studio Community by default. However, if you wish to change the default IDE to Visual Studio Code, you can follow the instructions linked below. *Using Visual Studio Community for code editing and Visual Studio Code for Version Control will **not** cause any problems in your workflow.*
 
 * [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
 
 </details>
-
->
+<br>
 
 **Step 2)** In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal".
 
 > This should ideally be a PowerShell or (Git)Bash terminal to avoid platform-specific syntax errors and inconsistencies.
 
-**Step 3)** Initializing the Repository:
+**Step 3)**  Initialize the Repository by running the following terminal commands line by line:
+
+* Make sure you are within the desired folder before initialising the repository, otherwise it will create in the root of the user directory*
+
+<details>
+<summary><b> Can I initialize without using the terminal? </b></summary>
 
 > While you can initialize a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>), this only executes the first command line from the following block, and you get more control over specific details by creating it from the command line.
 
-Enter the following commands line by line:
+</details>
+<br>
 
 ```bash
 git init --initial-branch=main
@@ -150,7 +254,7 @@ git push --set-upstream https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REP
 
 * *If the EngGit window appears, enter your credentials and sign in.*
 
-**Step 4)** Enter the following line:
+**Step 4)** Enter the following command line:
 
 ```bash
 git remote add origin https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-NAME.git
@@ -160,9 +264,22 @@ git remote add origin https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-
 
 > You can also create a repository directly on the EngGit website first and push to the repository's URL, just as in the steps for GitHub outlined below.
 
+**Step 5)** Enter the following command line:
+
+```bash
+git push -u origin main
+```
+
+* This line will ensure that your project is correctly uploaded/published and pushed to the remote correctly on creation
+
+> You can also open the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>) and select the big blue button labelled "*Publish Branch*" to achieve the same thing.
+
 ---
 
-#### *PREFILLED TERMINAL LINES FOR ENGGIT:*
+#### *Prefilled Terminal Lines for EngGit:*
+
+<details>
+<summary><b> Show Code Block </b></summary>
 
 ```bash
 git init --initial-branch=main
@@ -173,7 +290,10 @@ git add README.md
 git commit -m "First Commit - Added gitignore and README"
 git push --set-upstream https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-NAME main
 git remote add origin https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-NAME.git
+git push -u origin main
 ```
+
+</details>
 
 ---
 
@@ -191,23 +311,28 @@ git remote add origin https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-
 <details>
 <summary><b> What about Unreal Engine? </b></summary>
 
->
-
 *Unreal Engine* uses Visual Studio Community by default. However, if you wish to change the default IDE to Visual Studio Code, you can follow the instructions linked below. Using Visual Studio Community for code editing and Visual Studio Code for Version Control will not cause any problems in your workflow.
 
 * [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
 
 </details>
-
->
+<br>
 
 **Step 3)** In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal" to open a new terminal.
 
 > This should ideally be a PowerShell or (Git)Bash terminal to avoid platform-specific syntax errors and inconsistencies.
 
-**Step 4)** Initializing the Repository:
+**Step 4)** Initialize the Repository by running the following terminal commands line by line:
 
-Enter the following commands line by line:
+* Make sure you are within the desired folder before initialising the repository, otherwise it will create in the root of the user directory
+
+<details>
+<summary><b> Can I initialize without using the terminal? </b></summary>
+
+> While you can initialize a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>), this only executes the first command line from the following block, and you get more control over specific details by creating it from the command line.
+
+</details>
+<br>
 
 ```bash
 git init --initial-branch=main
@@ -223,7 +348,7 @@ git remote add origin https://github.com/YOUR-GIT-NAME/YOUR-REPO-NAME.git
 
 * *If the Git Credentials Manager window appears, enter your credentials and sign in.*
 
-**Step 5)** Enter the following line:
+**Step 5)**  Enter the following command line:
 
 ```bash
 git remote -v
@@ -231,17 +356,24 @@ git remote -v
 
 * `git remote -v` *will check that the repo is correct before pushing*
 
-**Step 6)** Enter the following line:
+**Step 6)**  Enter the following command line:
 
 ```bash
 git push -u origin main
 ```
 
+* This line will ensure that your project is correctly uploaded/published and pushed to the remote correctly on creation
+
+> You can also open the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>) and select the blue button labelled "*Publish Branch*" to achieve the same thing.
+
 ---
 
-#### *PREFILLED TERMINAL LINES FOR GITHUB:*
+#### *Prefilled Terminal Lines for GitHub:*
 
 > **Create the Repository on <https://github.com/dashboard> first**
+
+<details>
+<summary><b> Show Code Block </b></summary>
 
 ```bash
 git init --initial-branch=main
@@ -252,8 +384,10 @@ git commit -m "First Commit - Added gitignore and README"
 git branch -M main
 git remote add origin https://github.com/YOUR-GIT-NAME/YOUR-REPO-NAME.git
 git remote -v
-git push --set-upstream origin main
+git push -u origin main
 ```
+
+</details>
 
 ---
 
@@ -551,7 +685,7 @@ git pull
 
 ---
 
-## Dealing with Merge Conflicts
+## Dealing with Clashes and Merge Conflicts
 
 Sometimes, when the same file has been worked on across devices or users without pulling local changes before attempting to push, you may run into ***Merge Conflicts*** where there exist two versions of the same file within git, and the repository doesn't know which one to use. The two files exist in a sort of *superposition* of two states at once until resolved.
 
@@ -569,13 +703,13 @@ The best way to deal with merge conflicts, of course, is to *avoid them altogeth
 
 Merge conflicts can be resolved using both the Visual Studio Code UI and the terminal; however, the UI gives a much better visual representation of what files are conflicting, as well as viewing possible errors that could come as a result of merging. This provides ***much easier*** control over which parts of a file to accept in a merge. As such, it is highly recommended to resolve merge conflicts this way.
 
-> To reset or restart a merge, you can select the search bar at the top of the window and type `> git abort merge` to reset your directory back to the state it was in before the merge was started.
+> To reset or restart a merge, you can execute *Control + Shift + Period | Command + Shift + Period* or select the select the search bar at the top of the window and type `> "git abort merge"` to reset your directory back to the state it was in before the merge was started.
 
 ### Dealing with Merge Conflicts using the Visual Studio Code UI
 
 Visual Studio Code has two methods of resolving merge conflicts: the *Inline Merge Editor* or the *Three-Way Merge Editor*.
 
-#### Inline Editor Method
+#### In-Line Editor Method
 
 The *Inline Merge Editor* will open the affected file and highlight differences within the file in either <span style="background-color:aquamarine;color:dimgrey"> green (Aquamarine)</span> for local changes - labelled "*(Current Change)*", or <span style="background-color:cornflowerblue;color:white">blue (Cornflower Blue)</span> for incoming changes - labelled "*(Incoming Change)*".
 
@@ -619,20 +753,21 @@ The **bottom** (result) window will have a label indicating where the resulting 
 
 Once you have resolved all conflicts in a file and are happy with the state of the result file in the lower window, you can select the blue button labelled "*Complete Merge*" in the bottom right corner the lower window.
 
-***Once all conflicts have been resolved, you must stage the affected files and commit them as a new push.
-The commit message will be autofilled in the format `"Merge Branch '[affected branch]' into [current branch]`***
+***Once all conflicts have been resolved, you must stage the affected files and commit them as a new push.***
+
+***The commit message will be autofilled in the format `"Merge Branch '[affected branch]' into [current branch]`***
 
 ---
 
 ## Adding Collaborators to a Repository
 
-### On EngGit
+### Adding Collaborators On EngGit
 
 On the EngGit website, open your project. On the left-hand panel, hover over "Manage" and select "Members", and in the popup menu, enter the person's user code or name. Once the account has been found, you can select their *Role* in the project. Click "Add [*name*]" to invite them to the project.
 > If you intend to have them contribute to the project, select the *Developer* Role.
 > You can also provide an expiry date for their access to the project. Unless specified otherwise, leave this blank.
 
-### On GitHub
+### Adding Collaborators On GitHub
 
 On the GitHub website, open your project. Along the top bar, click the "Settings" button, then along the left-hand panel, under the "Access" heading, select "Collaborators".
 
@@ -672,9 +807,55 @@ A branch is like a secondary, parallel root folder of your repository that allow
 
 ### Creating New Branches
 
-#### Creating New Branches on EngGit
+You can create and use branches by either:
 
-On the EngGit website, open your project.
+* Creating the branch on the local remote first and pushing it to the host, or
+* creating the branch on the hosting website first and pulling it to the local remote
+
+Both methods function the same way and achieve the same outcome.
+
+#### Local Remote Branch Creation
+
+##### Creating a New Branch through the Visual Studio Code UI
+
+In Visual Studio Code, along the bottom, select the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". This will bring up the list of git branches.
+
+To create a new branch, select the first option *"**+** Create new branch..."*.
+
+Enter a name for the new branch in the field provided. This will create and switch into a new branch.
+
+> You can also execute *Control + Shift + Period | Command + Shift + Period* or select the search bar at the top of the window and type `> "git create branch"`, then enter a branch name to create a branch
+
+Open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i class="fa-solid fa-code-branch"></i>) and select the blue button labelled "*Publish Branch*" to push the new branch to the remote repository.
+
+##### Creating a New Branch through the Terminal
+
+In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal" to open a new terminal.
+
+> This should ideally be a PowerShell or (Git)Bash terminal to avoid platform-specific syntax errors and inconsistencies.
+
+To create a new branch using the terminal, run the following command lines:
+
+```bash
+git checkout -b <Branch Name>
+git branch
+git push -u origin <Branch Name>
+git branch -a
+```
+
+This will:
+
+* Create a new branch,
+* Switch into the new branch,
+* List the current local branches to verify that we are on the correct branch,
+* Push and Upload/Publish the newly created branch to the remote repository, and
+* List all remote branches to verify that the new branch has been pushed
+
+#### Host Website Branch Creation
+
+##### Creating a New Branch on EngGit
+
+On the **EngGit** website, open your project.
 
 To **view your existing branches** or switch to a different branch, select the button underneath the project icon and name with the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". This will list all of your current branches, as well as the default branch. Select any of the listed branches to switch into it.
 
@@ -684,47 +865,17 @@ To **add a new branch**, locate the **+** button underneath the project icon and
 * * *If you are unsure, create the new branch from "*main*".*
 * Select the blue button labelled "Create branch" to add a new branch to your repository. You will automatically be placed back into the project view inside the new branch
 
-#### Creating a new Branch on GitHub
+##### Creating a new Branch on GitHub
 
-On the GitHub website, open your project.
+On the **GitHub** website, open your project.
 
 To **view your existing branches** or switch to a different branch, select the button underneath the project icon and name with the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". This will list all of your current branches, as well as the default branch. Select any of the listed branches to switch into it.
 
-To **add a new branch**, select the button underneath the project icon and name with the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". At the bottom of the list of branches, select "*View all branches*". In the new window, select the green button in the upper right corner labelled *New branch*
+To **add a new branch**, select the button underneath the project icon and name with the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". At the bottom of the list of branches, select "*View all branches*". Alternatively, select the link next to the dropdown labelled " <i class="fa-solid fa-code-branch"></i> [x] Branches". This will open the branch manager. In the new window, select the green button in the upper right corner labelled *New branch*
 
 * Enter a name for the new branch in the field provided, and select an existing branch to create from.
 * * *If you are unsure, create the new branch from "*main*".*
 * Select the green button labelled "Create branch" to add a new branch to your repository. You will automatically be shown a list of all branches, and can now navigate back to the project root and switch branches.
-
-#### Creating a New Branch through the Visual Studio Code UI
-
-In Visual Studio Code, along the bottom, select the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". This will bring up the list of git branches.
-
-To create a new branch, select the first option *"**+** Create new branch..."*.
-Enter a name for the new branch in the field provided. This will create and switch into a new branch.
-
-Open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i class="fa-solid fa-code-branch"></i>) and select the blue button labelled "*Publish Branch*" to push the new branch to the remote repository.
-
-#### Creating a New Branch through the terminal
-
-In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal" to open a new terminal.
-
-> This should ideally be a PowerShell or (Git)Bash terminal to avoid platform-specific syntax errors and inconsistencies.
-
-To create a new branch using the terminal, run the following command lines:
-
-```bash
-git checkout -b <branch name>
-git branch
-git push origin <branch name>
-```
-
-This will:
-
-* Create a new branch,
-* Switch into the new branch,
-* List the current branches to verify that we are on the correct branch, and
-* Push the newly created branch to the remote repository
 
 ### Checking for Newly Created branches
 
@@ -751,14 +902,122 @@ In Visual Studio Code, along the bottom taskbar, select the branch icon (<i clas
 To switch branches, enter one of the following command lines:
 
 ```bash
-git checkout <branch name>
+git checkout <Branch Name>
 ```
 
 or
 
 ```bash
-git switch <branch name>
+git switch <Branch Name>
 ```
+
+### Renaming Branches
+
+If you want to rename a branch, there are slightly different methods than must be taken depending on whether the branch is local only, or whether it has been pushed to a remote already.
+
+> Its best to ensure you name branches correctly the first time to avoid having to rename them. Check the name before publishing the branch so that in the case you do need to rename it, you only need to change the local name.
+
+#### Renaming Branches using the Visual Studio Code UI
+
+To rename a branch, execute *Control + Shift + Period | Command + Shift + Period* or select the search bar at the top of the window and type `> "git rename branch"`, then enter a branch name to rename the current branch.
+
+This will rename the current branch to the new entered name, however it will only rename it locally. To rename it on the remote, you will need to execute some terminal commands, which are listed in the following section.
+
+#### Renaming Branches using the Terminal
+
+##### Renaming a Local Branch
+
+To rename a **local branch** (one that hasn't been pushed yet), run the following terminal command:
+
+```bash
+git branch -m <Old Branch Name> <New Branch Name>
+```
+
+This allows you to rename the branch in one line without needing to switch into it first.
+
+* *If this fails*, separate out the command into twi lines by first running `git checkout <Old Branch Name>` to switch into the branch, then run `git branch -m <New Branch Name>”` to rename it.
+
+##### Renaming a Remote Branch
+
+To rename a **remote branch** (one that ***has*** been pushed) such that both the local and remotes are updated, you need to run some extra command lines:
+
+> It may help to run `git branch -a` to view the names of local and remote branches to ensure that branches are being named correclty
+
+**Step 1)** First, run the following commands to change the local remote name as above:
+
+```bash
+git branch -m <Old Branch Name> <New Branch Name>
+```
+
+**Step 2)** Once the branch has been renamed, delete the branch with the old name from the remote:
+
+```bash
+git push origin --delete <Old Branch Name>
+```
+
+**Step 3)** Next, push the branch with the new name to the remote in place of the old one using:
+
+```bash
+git push origin -u <New Branch Name>
+```
+
+**Step 4)** Finally, refresh the list of branches by running:
+
+```bash
+git remote update origin --prune
+```
+
+This will update a branch name both locally and when viewed on the remote repository host, and will maintain the new branch name wherever the repository is cloned.
+
+### Deleting Branches
+
+#### Deleting Branches Locally
+
+##### Deleting Branches using the Visual Studio Code UI
+
+To delete a branch, execute *Control + Shift + Period | Command + Shift + Period* or select the search bar at the top of the window and type `> "git delete branch"`, then select a branch to delete from the list
+
+> This list will ***not*** show the currently selected branch. If the desired branch isn't showing, switch back to main and try again
+
+This will delete the desired branch, however it will only delete it locally. To delete it on the remote, you will either need to execute some terminal commands or delete it on the host website. Both methods are listed in the following sections.
+
+##### Deleting Branches using the Terminal
+
+To delete a **local branch** (one that hasn't been pushed yet), run the following terminal command:
+
+```bash
+git branch -d <Branch Name>
+```
+
+To delete a **remote branch** (one that ***has*** been pushed), run the following terminal command:
+
+```bash
+git push -d origin <Branch Name>
+```
+
+#### Deleting Branches on a Host Website
+
+##### Deleting Branches on EngGit
+
+On the **EngGit** website, open your project.
+
+On the right-hand side of the window, under the heading *Project information*, select the link labelled " <i class="fa-solid fa-code-branch"></i> [x] Branches" to open the branch manager.
+
+From the list, select the three vertical dots to the right of a branch, and from the dropdown select "**Delete Branch**".
+
+Confirm the branches deletion in the popup window that appears by selecting the red button labelled "**Yes, delete branch**".
+
+##### Deleting Branches on GitHub
+
+On the **GitHub** website, open your project.
+
+Select the button underneath the project icon and name with the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". At the bottom of the list of branches, select "*View all branches*". Alternatively, select the link next to the dropdown labelled " <i class="fa-solid fa-code-branch"></i> [x] Branches". This will open the branch manager.
+
+From the list, select the trashcan icon to the right of a branch, to delete the branch.
+
+* If you attempt to delete the main branch, a popup will appear in the bottom left corner stating "*You can't delete the default branch.*"
+
+> There will be no confirmation for deletion of branches, so **be careful**
 
 ---
 
@@ -857,76 +1116,60 @@ To push an existing repository to a new remote, you can run the following termin
 
 * *Be very careful when doing the following, as ensuring each line uses the correct URL and name is very important*
 
+**Step 1)** This will list the current "origin" that we are pushing to:
+
 ```bash
 git remote get-url origin
 ```
 
-This will list the current "origin" that we are pushing to.
+**Step 2)** This will rename the current origin branch:
 
 ```bash
 git remote rename origin [Current Origin Host]
 ```
 
-This will rename the current origin branch.
-
 * For example, if the URL in the first step is a GitHub URL (meaning that the repo is being hosted on GitHub), running `git remote rename origin GitHub` will rename the origin branch to GitHub, indicating where it is being hosted.
+
+**Step 3)** This will add a second repository to the git under the name and URL provided:
 
 ```bash
 git remote add [New Repository Host] <new repository url>
 ```
 
-This will add a second repository to the git under the name and URL provided
-
 * For example, running  `git remote add EngGit https://eng-git.canterbury.ac.nz/...` will create a new remote named *EngGit*.
+
+**Step 4)** This will add the existing repository as a fetch URL:
 
 ```bash
 git remote add origin <existing repository url>
 ```
 
-This will add the existing repository as a fetch URL.
+**Step 5)** This will ensure that whenever pushing to origin, it will push to the push url provided:
 
 ```bash
 git remote set-url --add --push origin <push url>
 ```
 
-This will ensure that whenever pushing to origin, it will push to the push url provided.
-
 * This can be run for any number of additional remotes that you wish to push to.
+
+**Step 6)** This will check that multiple remotes have been setup correctly:
 
 ```bash
 git remote show origin
 ```
 
-This will check that multiple remotes have been setup correctly.
-
 * It should list a single fetch URL which is the original repository, and multiple Push URLs, which have been configured by the user.
 
-### Example: Setting a Remote from GitHub to push to both GitHub and EngGit
-
-<details>
-<summary><b> Show Code Block </b></summary>
-
->
+**Step 7)** This will ensure that the **entire repository** (including all branches) is pushed to both URLS right after creation to keep them up to date, and ensure that the hierarchy of branches remains the same across hosts:
 
 ```bash
-git remote get-url origin
-git remote rename origin GitHub
-git remote add EngGit <EngGit URL>
-git remote add origin <GitHub URL>
-git remote set-url --add --push origin <GitHub URL>
-git remote set-url --add --push origin <EngGit URL>
+git push --all origin
 ```
-
-</details>
-
->
 
 ### Example: Setting a Remote from EngGit to push to both EngGit and GitHub
 
 <details>
 <summary><b> Show Code Block </b></summary>
-
->
 
 ```bash
 git remote get-url origin
@@ -935,11 +1178,28 @@ git remote add GitHub <GitHub URL>
 git remote add origin <EngGit URL>
 git remote set-url --add --push origin <EngGit URL>
 git remote set-url --add --push origin <GitHub URL>
+git push --all origin
 ```
 
 </details>
 
->
+### Example: Setting a Remote from GitHub to push to both GitHub and EngGit
+
+<details>
+<summary><b> Show Code Block </b></summary>
+
+```bash
+git remote get-url origin
+git remote rename origin GitHub
+git remote add EngGit <EngGit URL>
+git remote add origin <GitHub URL>
+git remote set-url --add --push origin <GitHub URL>
+git remote set-url --add --push origin <EngGit URL>
+git push --all origin
+```
+
+</details>
+<br>
 
 > Adapted from: [*Pushing to multiple git remotes simultaneously by Jeff Kreeftmeijer*](https://jeffkreeftmeijer.com/git-multiple-remotes/#fnr.2)
 
@@ -1084,12 +1344,14 @@ Source Control Branch Icon <i class="fa-solid fa-code-branch"></i>: <https://fon
 
 ---
 
+## Copyright Information
+
 **<a href="https://github.com/SaxySam/Git_Instructions">"*GIT OVERVIEW AND SETUP INSTRUCTIONS*"</a> © 2025 by <a href="https://github.com/SaxySam">Samuel Kennedy</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>**
 
-<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"> <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"> <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"> <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
 ***No AI slop was used in the creation of this document.***
 
 ---
 
-[***Back To Top***](#git-overview-and-setup-instructions)
+[*Back To Top*](#git-overview-and-setup-instructions)
