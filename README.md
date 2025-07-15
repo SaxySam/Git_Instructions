@@ -505,21 +505,29 @@ Once the files are under the heading "*Staged Changes*", enter a message into th
 
 ### Pushing Changes Using the Terminal
 
-In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal" to open a new terminal.
+Before you can push changes, you must *stage* them, or prepare them for upload
 
-> This should ideally be a PowerShell or (Git)Bash terminal to avoid platform-specific syntax errors and inconsistencies.
+To stage a specific changed file using the terminal,, run the following terminal commands.
 
-To stage changes to a Git repository using the terminal, run the following command line:
+```bash
+git add [Filename]
+```
+
+To stage **all** files using the terminal, run one of the following command lines:
+
+```bash
+git add .
+```
+
+or
 
 ```bash
 git add --a
 ```
 
-This will stage all the changed files detected.
+* This will stage **all** of the changed files detected in the local repository
 
-> To stage only specific files, instead use `git add [Filename]`
-
-To add a commit message to the push using the terminal, run the following command line:
+To add a **commit message** to the push using the terminal, run the following command line:
 
 ```bash
 git commit -m "[Commit Message]"
@@ -528,7 +536,7 @@ git commit -m "[Commit Message]"
 
 > **Make sure to include the quotation marks around the commit message; otherwise, the command will not enter correctly.**
 
-To push all staged changes to the remote repository using the terminal, run the following command line:
+To **push** all staged changes to the remote repository using the terminal, run the following command line:
 
 ```bash
 git push
@@ -899,7 +907,7 @@ In Visual Studio Code, along the bottom taskbar, select the branch icon (<i clas
 
 #### Switching Branches using the Terminal
 
-To switch branches, enter one of the following command lines:
+To switch branches, run one of the following command lines:
 
 ```bash
 git checkout <Branch Name>
