@@ -50,7 +50,7 @@
     * [Discarding Changes Using the Terminal](#discarding-changes-using-the-terminal)
 15. [Stashing and Popping Changes](#stashing-and-popping-changes)
     * [Stashing Changes Using the Visual Studio Code UI](#stashing-changes-using-the-visual-studio-code-ui)
-    * [Popping Stashed Changes Using the Visual Studio Code UI](#popping-stashed-changes-using-the-visual-studio-code-ui)
+    * [Popping Changes Using the Visual Studio Code UI](#popping-changes-using-the-terminal)
     * [Stashing Changes Using the Terminal](#stashing-changes-using-the-terminal)
     * [Popping Changes Using the Terminal](#popping-changes-using-the-terminal)
 16. [Pulling Changes](#pulling-changes)
@@ -618,7 +618,7 @@ Hover over a changed file, right click it, and select "*Stash Changes*" from the
 
 To stash **all** changes, hover over the word "*Changes*", right click it, and select "*Stash All Changes*" from the context menu. A text field will appear prompting you to add a stash message. Enter a message, then press enter to stash the changes. All changes made will be put into the stash, and all files will revert to their state at the last commit.
 
-### Popping Stashed Changes Using the Visual Studio Code UI
+### Popping Changes Using the Visual Studio Code UI
 
 To pop (restore) a change, hover over the heading **CHANGES** at the top of the source control window. Select the **...** that appears on the right side of the heading. From the context menu, select "Stash" > "Pop Stash". This will bring up a list of known stashes that you can select to restore.
 
