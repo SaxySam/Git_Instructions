@@ -935,7 +935,7 @@ git branch -m <Old Branch Name> <New Branch Name>
 
 This allows you to rename the branch in one line without needing to switch into it first.
 
-* *If this fails*, separate out the command into twi lines by first running `git checkout <Old Branch Name>` to switch into the branch, then run `git branch -m <New Branch Name>”` to rename it.
+* *If this fails*, separate the command out into two lines by first running `git checkout <Old Branch Name>` to switch into the branch, then run `git branch -m <New Branch Name>”` to rename it.
 
 ##### Renaming a Remote Branch
 
@@ -1029,7 +1029,8 @@ If a file is over 100mb, hosting websites like GitHub may / will refuse to push 
 
 To fix this, install **GIT LFS** and use it to track and push the large files separately.
 
-> Be aware that sites such as GitHub have a limit on the amount of storage held in LFS without a charge. ***Use wisely.***
+> Be aware that sites such as GitHub have a limit on the amount of storage held in LFS without a charge.
+***Use wisely.***
 >
 > * [About Git Large File Storage - GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
 
