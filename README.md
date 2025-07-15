@@ -658,7 +658,7 @@ git stash pop stash@{[Stash Index]}
 
 * i.e. `git stash pop stash@{2}` will restore the second most recent stash
 
-> More information can be on the [*Git Stash* section of the Git Documentation](https://git-scm.com/docs/git-stash), or this Atlassian [help page on Git Stashing](https://www.atlassian.com/git/tutorials/saving-changes/git-stash).
+> More information can be found on the [*Git Stash* section of the Git Documentation](https://git-scm.com/docs/git-stash), or this Atlassian [help page on Git Stashing](https://www.atlassian.com/git/tutorials/saving-changes/git-stash).
 ---
 
 ## Pulling Changes
@@ -1104,7 +1104,7 @@ If you want to ignore a file that has already been committed but not pushed, you
 git rm --cached [Filename]
 ```
 
-> More information can be on the [Ignoring Files section of the Git Documentation](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#_ignoring).
+> More information can be found on the [Ignoring Files section of the Git Documentation](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#_ignoring).
 
 ---
 
