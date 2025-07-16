@@ -233,8 +233,11 @@ Gitignore templates for other project structures can be found below. Simply look
 <summary><b> What about Unreal Engine? </b></summary>
 
 *Unreal Engine* uses Visual Studio Community by default. However, if you wish to change the default IDE to Visual Studio Code, you can follow the instructions linked below. *Using Visual Studio Community for code editing and Visual Studio Code for Version Control will **not** cause any problems in your workflow.*
+* Unreal Engine also allows you to connect the project to git directly, automatically staging changed files and allowing you to push from within the editor. You can do this by selecting the "<i class="fa-solid fa-code-branch"></i> *Revision Control*" button on the task bar in in the bottom left corner of the project window, and selecting "*Connect to Revision Control*" from the list. In the dropdown of providers, select '*Git (Beta Version)*", then select the blue botton labelled "*Accept Settings*".
+* > If there is no repository initiatlised in the project directory, a new window will apper allowing you to enter details and create one.
+* Once revision control has been connected, the source control icon <i class="fa-solid fa-code-branch"></i> will have a green checkmark. Hovering over the button will display information about the repository. CLicking the button again will allow you to view and submit (push) changes without leaving the editor window.
 
-* [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
+> [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
 
 </details>
 
