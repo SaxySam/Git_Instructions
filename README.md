@@ -12,7 +12,7 @@
 
 **Select any of the below links to navigate to that section of this document**
 
-> You can also execute *Control + T | Command + T* or select the select the search bar at the top of the window to view and navigate different sections of this document.
+> You can also execute *Control + T | Command + T* within Visual Studio Code or select the select the search bar at the top of the window to view and navigate different sections of this document.
 
 <details>
 <summary><b> Expand Table of Contents </b></summary>
