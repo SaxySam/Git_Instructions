@@ -145,7 +145,7 @@ Git works by creating a *hidden folder* in the root directory of your project, w
 > * This folder can be viewed on Windows systems by navigating to the root directory of the project in the File Explorer, then selecting "View" > "Show", and selecting "Hidden Items" to toggle the visibility of hidden files.
 > * This folder can be viewed on MacOS systems by navigating to the root directory of the project in the Finder and executing *Command + Shift + Period* to toggle the visibility of hidden files.
 > * This folder can be viewed on Linux systems in the GUI by navigating to the root directory of the project in the File Manager, selecting "Menu" or "View" (depending on distribution), and then selecting "Show Hidden Files"
->   * Alternatively, the `ls -a` terminal command will list all files in a directory, including hidden files
+    >   * Alternatively, the `ls -a` terminal command will list all files in a directory, including hidden files
 
 * A greyed out folder titled ".git" should appear in the root directory using any of the three methods listed above, or in the command output if using the terminal.
 
@@ -538,7 +538,6 @@ To add a **commit message** to the push using the terminal, run the following co
 ```bash
 git commit -m "[Commit Message]"
 ```
->
 
 > **Make sure to include the quotation marks around the commit message; otherwise, the command will not enter correctly.**
 
@@ -1081,15 +1080,12 @@ If you want to ignore a file and stop it from being pushed to the remote reposit
 <details>
 <summary><b> What if I don't have a .gitignore file? </b></summary>
 
->
-
 > If you need a gitignore template, you can find one from the [List of gitignore template files](https://github.com/github/gitignore/tree/main).
 >
 > You can also create a new blank one by running the terminal command `touch .gitignore` in a **Git(Bash) Terminal**.
 
 </details>
-
->
+<br>
 
 To ignore a file, you can add its filepath to the .gitignore directly, or use one of the more technical file searching patterns as shown in the example below from the documentation:
 
@@ -1237,13 +1233,10 @@ Migrating a repository will bring everything within the project, including all f
 <details>
 <summary><b> Why do I need to enter my credentials? </b></summary>
 
->
-
 > This is essential as your EngGit account is protected by the University of Canterbury, and as such, you cannot make repositories public; as repositories hosted on EngGit can *only* be accessed by University of Canterbury personnel. If simply importing from GitLab itself, you may not need to do this.
 
 </details>
-
->
+<br>
 
 Under the heading "**Your new repository details**", set the **name of the project** in the field labelled "*Repository name*".
 
