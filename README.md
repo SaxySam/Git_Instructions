@@ -14,6 +14,10 @@
 
 > You can also execute *Control + T | Command + T* or select the select the search bar at the top of the window to view and navigate different sections of this document.
 
+<details>
+<summary><b> Expand Table of Contents </b></summary>
+<br>
+
 1. [GIT OVERVIEW AND SETUP INSTRUCTIONS](#git-overview-and-setup-instructions)
 2. [Table of Contents](#table-of-contents) - **You are here**
 3. [Forward](#forward)
@@ -101,6 +105,8 @@
 26. [Merging Multiple Separate Repositories into branches under One Single Repository](#merging-multiple-separate-repositories-into-branches-under-one-single-repository)
 27. [Useful Links](#useful-links)
 28. [Copyright Information](#copyright-information)
+
+</details>
 
 ---
 
