@@ -1,6 +1,7 @@
 # GIT OVERVIEW AND SETUP INSTRUCTIONS
 
-***Authored by Samuel Kennedy - Ske131***
+***Authored by Samuel Kennedy - Ske131*** \
+***Last Updated: 2025-07-16***
 
 > Include this file in the root directory of your repository for quick access, or follow the [Git Repository Link](https://github.com/SaxySam/Git_Instructions) for the most recent update.
 
@@ -12,11 +13,10 @@
 
 **Select any of the below links to navigate to that section of this document**
 
-> You can also execute *Control + T | Command + T* within Visual Studio Code or select the select the search bar at the top of the window to view and navigate different sections of this document.
+> You can also execute *`Control + T | Command + T`* within Visual Studio Code or select the search bar at the top of the window to view and navigate different sections of this document.
 
-<details>
+<details open>
 <summary><b> Expand Table of Contents </b></summary>
-<br>
 
 1. [GIT OVERVIEW AND SETUP INSTRUCTIONS](#git-overview-and-setup-instructions)
 2. [Table of Contents](#table-of-contents) - **You are here**
@@ -93,7 +93,7 @@
             * [Deleting Branches on EngGit](#deleting-branches-on-enggit)
             * [Deleting Branches on GitHub](#deleting-branches-on-github)
 21. [Configuring Git Large File Systems](#configuring-git-large-file-systems)
-22. [Restoring / Un-committing Committed Changes](#restoring--un-committing-committed-changes)
+22. [Restoring / Uncommiting Committed Changes](#restoring--uncommiting-committed-changes)
 23. [Adding a file to the .gitignore](#adding-a-file-to-the-gitignore)
 24. [Pushing a Repository to / Hosting on Multiple Remotes](#pushing-a-repository-to--hosting-on-multiple-remotes)
     * [Example: Setting a Remote from EngGit to push to both EngGit and GitHub](#example-setting-a-remote-from-enggit-to-push-to-both-enggit-and-github)
@@ -114,15 +114,19 @@
 
 This document outlines steps and instructions for using git to manage both solo and collaborative projects, from an explanation and setup to covering some of the most commonly encountered problems. It details instructions using both Visual Studio Code and the terminal, as well as instructions for the two most common repository hosting websites: GitLab (EngGit) and GitHub. Think of it like a cheat sheet or reference for anything git related.
 
-While the Visual Studio Code implementation provides a very helpful visual guide, the terminal commands often allow more control and flexibility, and can be used within any IDE or outside of one entirely. As such, some sections of this document are only able to be followed by using the terminal, as the UI lacks a direct counterpart.
+While the Visual Studio Code implementation provides a very helpful visual guide, the terminal commands often allow more control and flexibility. As such, some sections of this document are only able to be followed by using the terminal, as the UI lacks a direct counterpart.
+
+> Note: Only some Visual Studio Code steps may be able to be recreated within other IDEs, while *all* terminal commands will be able to run within other IDEs or outside of one entirely. Keep this in mind when using different or unfamiliar software.
 
 ---
 
 ## Viewing this Document
 
-**To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced).** ***Each markdown viewer has its own quirks and handling methods, and as such may encounter slight differences.***
+**To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced). [*JetBrains Rider*](https://www.jetbrains.com/rider/download/) also has a built-in markdown previewer similar to the VSCode extension.**
 
-* **GitHub** and **GitLab** both have built-in Markdown previews for files named "README.md"; however, both use the custom *GitHub Flavoured Markdown* (GFM) variant of the markdown format, and as such, some links and extra visibility elements may not function correctly.
+***Each markdown viewer has its own quirks and handling methods, and as such you may encounter slight version differences depending on the software you use.***
+
+* **GitHub** and **GitLab** both have built-in Markdown previews for files named "README.md"; however, both use the custom *GitHub Flavoured Markdown* (GFM) variant of the Markdown format, and as such, some links and extra visibility elements may not function correctly.
 
 ---
 
@@ -150,7 +154,6 @@ Git works by creating a *hidden folder* in the root directory of your project, w
 * A greyed out folder titled ".git" should appear in the root directory using any of the three methods listed above, or in the command output if using the terminal.
 
 </details>
-<br>
 
 The same git project may be cloned in multiple places or by multiple users, each with unique changes, however these changes will remain locally on the machine until they are uploaded or "*pushed*" to the remote *repository*, in which case the changes can be added to or "*merged*" into the main file structure, overwriting any existing files with updated versions containing uploaded changes. These new changes will then become available to all other copies of the project by downloading or "*pulling*" the new changes.
 
@@ -165,14 +168,13 @@ Each repository has a unique *pointer*, *name*, and *domain*, meaning you cannot
 The two repository hosting websites you are most likely to use are **GitHub** (<https://github.com/>) and **GitLab** (<https://gitlab.com/>); more specifically, the University of Canterbury GitLab host: **EngGit** (<https://eng-git.canterbury.ac.nz/>).
 
 <details>
-<summary><b> Why do I need a repository host? </b></summary>
+<summary><b> Why do I need a Repository Host? </b></summary>
 
 > These websites not only provide a convenient place to upload and download repositories to and from multiple devices, but also provide an easy way to view and manage a repository's file structure, change history, and settings without having to use the terminal or create your own system, as well as easily collaborate with other people on the same project.
 
 </details>
-<br>
 
-As such, this document covers steps for practices applicable to both hosts; however, most steps should be transferrable to any repository host or any use of the terminal.
+As such, this document covers steps for practices applicable to both hosts; however, most steps should be transferable to any repository host or any use of the terminal.
 
 ---
 
@@ -182,28 +184,32 @@ As such, this document covers steps for practices applicable to both hosts; howe
 
 Like any software, Git needs to be installed locally to any machine before being able to use it. Git can be downloaded and run on any Windows, MacOS, or Linux device, and can be [downloaded here](https://git-scm.com/downloads).
 
-> This will already be installed on university computers
+> This will already be installed on University computers.
 
 ### Install Visual Studio Code
 
 The second piece of software that is necessary for following through this document is *Visual Studio Code* (*VS Code* or *VSC* for short). VSC is an open source *Integrated Development Environment* (IDE) which has support for and integrations with many different languages and applications, as well as a large collection of user-made extensions. As such, it provides a convenient place to manage both code-related projects and git integration in a single application. Visual Studio Code can be [downloaded here](https://code.visualstudio.com/Download), and provides a helpful page on [Documentation](https://code.visualstudio.com/docs) to get you started.
 
-> This will already be installed on university computers
+> This will already be installed on University computers.
 
 <details>
-<summary><b> Why should I use Visual Studio Code? </b></summary>
+<summary><b> Why am I using Visual Studio Code? </b></summary>
 
-> There are many other fantastic tools for managing both code projects and git repositories. I find that VSC provides the best experience and the most user flexibility; however, other IDEs such as [*Visual Studio Community*](https://visualstudio.microsoft.com/downloads/) or [*JetBrains Rider*](https://www.jetbrains.com/rider/download/) provide similar functionality.
+> There are many other fantastic tools for managing both code projects and git repositories. I find that VSCode provides the best experience and the most user flexibility; however, other IDEs such as [*Visual Studio Community*](https://visualstudio.microsoft.com/downloads/) or [*JetBrains Rider*](https://www.jetbrains.com/rider/download/) provide similar functionality. *VSCode* and *Rider* also have community extensions that allow you to extend and customise your experience.
+> > If you have a preferred IDE that you're already familiar with, feel free to use that instead, and follow along where possible.
+> 
+> * Most IDEs will have similar if not identical implementations of the features outlined in this document, and as such the knowledge should be mostly transferable; *however*, the layout, steps, and UI may not be the same as described in the VSCode instructions, and may require some experimentation.
+> * Terminal commands will function the same *regardless* of the environment they are run in, so there should be no issues following the terminal instructions in different IDEs.
 >
-> There is also the standalone [GitHub Desktop](https://desktop.github.com/download/) application for a more streamlined and hands-off approach to git (however, there isn't as much flexibility in some places; a tradeoff in order to make the introduction to git less technical)
+> There is also the standalone [*GitHub Desktop*](https://desktop.github.com/download/) application for a more streamlined and hands-off approach to git (however, there isn't as much flexibility in some places; a tradeoff to make the introduction to git less technical). 
+> > The terminal can be accessed within GitHub Desktop just like any other IDE by selecting "Repository" -> "Open in Command Prompt / Git Bash" from the toolbar, or by executing *Control + **~** | Command + **~***
 
 </details>
-<br>
 
 ### Add a .gitignore
 
 Before doing anything involving git, ensure that a .gitignore file is placed in the directory of the Unity or Unreal project that you wish to upload.
-> This will stop unnecessary files from being pushed to your repository, and is essential for the following instructions in this document
+> This will stop unnecessary files from being pushed to your repository, and is essential for the following instructions in this document.
 
 * **Unity:** [*Unity* gitignore Template](https://github.com/github/gitignore/blob/main/Unity.gitignore)
 * **Unreal Engine:** [*Unreal Engine* gitignore Template](https://github.com/github/gitignore/blob/main/UnrealEngine.gitignore)
@@ -231,7 +237,6 @@ Gitignore templates for other project structures can be found below. Simply look
 * [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
 
 </details>
-<br>
 
 **Step 2)** In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal".
 
@@ -247,7 +252,6 @@ Gitignore templates for other project structures can be found below. Simply look
 > While you can initialize a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>), this only executes the first command line from the following block, and you get more control over specific details by creating it from the command line.
 
 </details>
-<br>
 
 ```bash
 git init --initial-branch=main
@@ -266,7 +270,7 @@ git push --set-upstream https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REP
 git remote add origin https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-NAME.git
 ```
 
-* This line will be part of the output from the following line after signing into EngGit, formatted "YOUR-REPO-NAME.git"
+* This line will be part of the output from the following line after signing in to EngGit, formatted "YOUR-REPO-NAME.git"
 
 > You can also create a repository directly on the EngGit website first and push to the repository's URL, just as in the steps for GitHub outlined below.
 
@@ -322,7 +326,6 @@ git push -u origin main
 * [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
 
 </details>
-<br>
 
 **Step 3)** In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal" to open a new terminal.
 
@@ -338,7 +341,6 @@ git push -u origin main
 > While you can initialize a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>), this only executes the first command line from the following block, and you get more control over specific details by creating it from the command line.
 
 </details>
-<br>
 
 ```bash
 git init --initial-branch=main
@@ -354,7 +356,7 @@ git remote add origin https://github.com/YOUR-GIT-NAME/YOUR-REPO-NAME.git
 
 * *If the Git Credentials Manager window appears, enter your credentials and sign in.*
 
-**Step 5)**  Enter the following command line:
+**Step 5)** Enter the following command line:
 
 ```bash
 git remote -v
@@ -362,7 +364,7 @@ git remote -v
 
 * `git remote -v` *will check that the repo is correct before pushing*
 
-**Step 6)**  Enter the following command line:
+**Step 6)** Enter the following command line:
 
 ```bash
 git push -u origin main
@@ -531,7 +533,7 @@ or
 git add --a
 ```
 
-* This will stage **all** of the changed files detected in the local repository
+* This will stage **all** the changed files detected in the local repository
 
 To add a **commit message** to the push using the terminal, run the following command line:
 
@@ -579,15 +581,15 @@ git restore --staged .
 
 ## Discarding Changes
 
-Discarding changes will reset all unpushed changes made to files in the repository back to the state they were in at the time of the last push. This can be useful when scrapping large amounts of changes or when you need a clean repository.
+Discarding changes will reset all unpushed changes made to files in the repository back to the state they were in at the time of the last push. This can be useful when scrapping large numbers of changes or when you need a clean repository.
 
 ### Discarding Changes Using the Visual Studio Code UI
 
 To discard a specific changed file, first open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i class="fa-solid fa-code-branch"></i>) to view your changed files.
 
-Hover over a changed file, right click it, and select "*Discard Changes*" from the context menu. In the pop-up window, select the button labelled "*Discard File*" to confirm the discard.
+Hover over a changed file, right-click it, and select "*Discard Changes*" from the context menu. In the pop-up window, select the button labelled "*Discard File*" to confirm the discard.
 
-To discard **all** changes, hover over the word "*Changes*", right click it, and select "*Discard All Changes*" from the context menu. In the pop-up window, select the button labelled "*Discard File*" to confirm the discard.
+To discard **all** changes, hover over the word "*Changes*", right-click it, and select "*Discard All Changes*" from the context menu. In the pop-up window, select the button labelled "*Discard File*" to confirm the discard.
 
 This method may not always work, in which case you should try:
 
@@ -627,9 +629,9 @@ Stashing a change allows you to take all changes made to files and store them fo
 
 To stash a specific changed file, first open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i class="fa-solid fa-code-branch"></i>) to view your changed files.
 
-Hover over a changed file, right click it, and select "*Stash Changes*" from the context menu. A text field will appear prompting you to add a stash message. Enter a message, then press Enter to stash the change. The change made will be put into the stash, and the file will revert to its state at the last commit.
+Hover over a changed file, right-click it, and select "*Stash Changes*" from the context menu. A text field will appear, prompting you to add a stash message. Enter a message, then press Enter to stash the change. The change made will be put into the stash, and the file will revert to its state at the last commit.
 
-To stash **all** changes, hover over the word "*Changes*", right click it, and select "*Stash All Changes*" from the context menu. A text field will appear prompting you to add a stash message. Enter a message, then press enter to stash the changes. All changes made will be put into the stash, and all files will revert to their state at the last commit.
+To stash **all** changes, hover over the word "*Changes*", right-click it, and select "*Stash All Changes*" from the context menu. A text field will appear, prompting you to add a stash message. Enter a message, then press "Enter" to stash the changes. All changes made will be put into the stash, and all files will revert to their state at the last commit.
 
 ### Popping Changes Using the Visual Studio Code UI
 
@@ -676,7 +678,7 @@ git stash pop stash@{[Stash Index]}
 
 ## Pulling Changes
 
-To pull changes from the remote repository, you must first have the project or folder open within VSC. To do this, along the top toolbar, select "File" -> "Open Folder", then navigate to your cloned repository and open the folder.
+To pull changes from the remote repository, you must first have the project or folder open within VSC. To do this, along the top toolbar, select "File" → "Open Folder", then navigate to your cloned repository and open the folder.
 
 ***YOU SHOULD ALWAYS PULL CHANGES BEFORE PUSHING IF YOU CAN HELP IT***
 
@@ -700,7 +702,7 @@ git pull
 
 ## Dealing with Clashes and Merge Conflicts
 
-Sometimes, when the same file has been worked on across devices or users without pulling local changes before attempting to push, you may run into ***Merge Conflicts*** where there exist two versions of the same file within git, and the repository doesn't know which one to use. The two files exist in a sort of *superposition* of two states at once until resolved.
+Sometimes, when the same file has been worked on across devices or users without pulling local changes before attempting to push, you may run into ***Merge Conflicts*** where there exist two versions of the same file within git, and the repository doesn't know which one to use. The two files exist in *superposition* of two states at once until resolved.
 
 Merge conflicts will appear visually in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>) under a new heading labelled "*Merge Changes*" with a red <b style="color:red">!</b> next to the file name, as well as a number indicating the amount of conflicts within the file.
 
@@ -1061,7 +1063,7 @@ The installation will add a new file named `.gitattributes` to the root of your 
 
 ---
 
-## Restoring / Un-committing Committed Changes
+## Restoring / Uncommiting Committed Changes
 
 If you need to restore or edit files that you have already staged and committed, you can use the following command to pull back the changes and modify them before pushing.
 
