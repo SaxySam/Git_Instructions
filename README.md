@@ -551,7 +551,7 @@ git push
 
 This will push all changes to the default URL and branch. We set these earlier in the setup process, and by default, they should be *origin* and *main* respectively.
 
-> To specify a specific remote or branch to push to, instead use `git push <remote> <branch>`
+> To specify a specific remote or branch to push to, instead use `git push <Remote> <Branch>`
 
 ---
 
