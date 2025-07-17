@@ -233,9 +233,9 @@ Gitignore templates for other project structures can be found below. Simply look
 <summary><b> What about Unreal Engine? </b></summary>
 
 *Unreal Engine* uses Visual Studio Community by default. However, if you wish to change the default IDE to Visual Studio Code, you can follow the instructions linked below. *Using Visual Studio Community for code editing and Visual Studio Code for Version Control will **not** cause any problems in your workflow.*
-* Unreal Engine also allows you to connect the project to git directly, automatically staging changed files and allowing you to push from within the editor. You can do this by selecting the "<i class="fa-solid fa-code-branch"></i> *Revision Control*" button on the task bar in the bottom left corner of the project window, and selecting "*Connect to Revision Control*" from the list. In the dropdown of providers, select "*Git (Beta Version)*", then select the blue button labelled "*Accept Settings*".
+* Unreal Engine also allows you to connect the project to git directly, automatically staging changed files and allowing you to push from within the editor. You can do this by selecting the "<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i> *Revision Control*" button on the task bar in the bottom left corner of the project window, and selecting "*Connect to Revision Control*" from the list. In the dropdown of providers, select "*Git (Beta Version)*", then select the blue button labelled "*Accept Settings*".
 * > If there is no repository initiatlised in the project directory, a new window will apper allowing you to enter details and create one.
-* Once revision control has been connected, the source control icon <i class="fa-solid fa-code-branch"></i> will have a green checkmark. Hovering over the button will display information about the repository. CLicking the button again will allow you to view and submit (push) changes without leaving the editor window.
+* Once revision control has been connected, the source control icon <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i> will have a green checkmark. Hovering over the button will display information about the repository. CLicking the button again will allow you to view and submit (push) changes without leaving the editor window.
 
 > [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
 
@@ -252,7 +252,7 @@ Gitignore templates for other project structures can be found below. Simply look
 <details>
 <summary><b> Can I initialize without using the terminal? </b></summary>
 
-> While you can initialize a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>), this only executes the first command line from the following block, and you get more control over specific details by creating it from the command line.
+> While you can initialize a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>), this only executes the first command line from the following block, and you get more control over specific details by creating it from the command line.
 
 </details>
 
@@ -285,7 +285,7 @@ git push -u origin main
 
 * This line will ensure that your project is correctly uploaded/published and pushed to the remote correctly on creation
 
-> You can also open the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>) and select the big blue button labelled "*Publish Branch*" to achieve the same thing.
+> You can also open the Source Control tab on the left-hand taskbar (Branch icon, <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) and select the big blue button labelled "*Publish Branch*" to achieve the same thing.
 
 ---
 
@@ -325,9 +325,9 @@ git push -u origin main
 <summary><b> What about Unreal Engine? </b></summary>
 
 *Unreal Engine* uses Visual Studio Community by default. However, if you wish to change the default IDE to Visual Studio Code, you can follow the instructions linked below. *Using Visual Studio Community for code editing and Visual Studio Code for Version Control will **not** cause any problems in your workflow.*
-* Unreal Engine also allows you to connect the project to git directly, automatically staging changed files and allowing you to push from within the editor. You can do this by selecting the "<i class="fa-solid fa-code-branch"></i> *Revision Control*" button on the task bar in the bottom left corner of the project window, and selecting "*Connect to Revision Control*" from the list. In the dropdown of providers, select "*Git (Beta Version)*", then select the blue button labelled "*Accept Settings*".
+* Unreal Engine also allows you to connect the project to git directly, automatically staging changed files and allowing you to push from within the editor. You can do this by selecting the "<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i> *Revision Control*" button on the task bar in the bottom left corner of the project window, and selecting "*Connect to Revision Control*" from the list. In the dropdown of providers, select "*Git (Beta Version)*", then select the blue button labelled "*Accept Settings*".
 * > If there is no repository initiatlised in the project directory, a new window will appear, allowing you to enter details and create one.
-* Once revision control has been connected, the source control icon <i class="fa-solid fa-code-branch"></i> will have a green checkmark. Hovering over the button will display information about the repository. CLicking the button again will allow you to view and submit (push) changes without leaving the editor window.
+* Once revision control has been connected, the source control icon <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i> will have a green checkmark. Hovering over the button will display information about the repository. CLicking the button again will allow you to view and submit (push) changes without leaving the editor window.
 
 > [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
 
@@ -344,7 +344,7 @@ git push -u origin main
 <details>
 <summary><b> Can I initialize without using the terminal? </b></summary>
 
-> While you can initialize a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>), this only executes the first command line from the following block, and you get more control over specific details by creating it from the command line.
+> While you can initialize a repository in the Source Control tab on the left-hand taskbar (Branch icon, <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>), this only executes the first command line from the following block, and you get more control over specific details by creating it from the command line.
 
 </details>
 
@@ -378,7 +378,7 @@ git push -u origin main
 
 * This line will ensure that your project is correctly uploaded/published and pushed to the remote correctly on creation
 
-> You can also open the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>) and select the blue button labelled "*Publish Branch*" to achieve the same thing.
+> You can also open the Source Control tab on the left-hand taskbar (Branch icon, <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) and select the blue button labelled "*Publish Branch*" to achieve the same thing.
 
 ---
 
@@ -444,7 +444,7 @@ This will be in the format:
 
 ### Cloning Using the Visual Studio Code UI
 
-**Step 1)** In Visual Studio Code, open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i class="fa-solid fa-code-branch"></i>), and select "Clone Repository".
+**Step 1)** In Visual Studio Code, open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>), and select "Clone Repository".
 
 **Step 2)** Enter the URL for your project in the window when prompted.
 
@@ -474,7 +474,7 @@ Any uncommitted modification, addition, or deletion to a file within the git rep
 
 ### Viewing Git Changes using the Visual Studio Code UI
 
-Open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i class="fa-solid fa-code-branch"></i>). All modifications to files within the working directory will be listed under the heading "*Changes*".
+Open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>). All modifications to files within the working directory will be listed under the heading "*Changes*".
 
 * A <span style="color:green">Green "U"</span> next to the file means it has been newly added to the repository in this commit
 * An <span style="color:orange">Orange "M"</span> next to the file means it has been modified in this commit
@@ -506,7 +506,7 @@ To integrate a change to the project and allow it to be accessed elsewhere, the 
 
 ### Pushing Changes Using the Visual Studio Code UI
 
-After making changes, open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i class="fa-solid fa-code-branch"></i>)
+After making changes, open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>)
 
 To prepare files for upload, click the small **+** icon next to the word "*Changes*" to stage these changes for upload.
 
@@ -568,7 +568,7 @@ Sometimes you may stage changes but need to unstage them to edit them or stop th
 
 ### Un-Staging Changes Using the Visual Studio Code UI
 
-Unstaging changes can be done the same way as staging changes. Open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i class="fa-solid fa-code-branch"></i>)
+Unstaging changes can be done the same way as staging changes. Open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>)
 
 To unstage changes, click the small **-** icon next to the word "*Staged Changes*".
 
@@ -592,7 +592,7 @@ Discarding changes will reset all unpushed changes made to files in the reposito
 
 ### Discarding Changes Using the Visual Studio Code UI
 
-To discard a specific changed file, first open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i class="fa-solid fa-code-branch"></i>) to view your changed files.
+To discard a specific changed file, first open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) to view your changed files.
 
 Hover over a changed file, right-click it, and select "*Discard Changes*" from the context menu. In the pop-up window, select the button labelled "*Discard File*" to confirm the discard.
 
@@ -634,7 +634,7 @@ Stashing a change allows you to take all changes made to files and store them fo
 
 ### Stashing Changes Using the Visual Studio Code UI
 
-To stash a specific changed file, first open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i class="fa-solid fa-code-branch"></i>) to view your changed files.
+To stash a specific changed file, first open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) to view your changed files.
 
 Hover over a changed file, right-click it, and select "*Stash Changes*" from the context menu. A text field will appear, prompting you to add a stash message. Enter a message, then press Enter to stash the change. The change made will be put into the stash, and the file will revert to its state at the last commit.
 
@@ -691,7 +691,7 @@ To pull changes from the remote repository, you must first have the project or f
 
 ### Pulling Using the Visual Studio Code UI
 
-In Visual Studio Code, open the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>), and press the "Sync Changes" button to download all uploaded changes.
+In Visual Studio Code, open the Source Control tab on the left-hand taskbar (Branch icon, <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>), and press the "Sync Changes" button to download all uploaded changes.
 
 ### Pulling Using the Terminal
 
@@ -711,7 +711,7 @@ git pull
 
 Sometimes, when the same file has been worked on across devices or users without pulling local changes before attempting to push, you may run into ***Merge Conflicts*** where there exist two versions of the same file within git. When this occurs, the repository doesn't know which one to use. The two files exist in *superposition* of two states at once until resolved.
 
-Merge conflicts will appear visually in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>) under a new heading labelled "*Merge Changes*" with a red "<b style="color:red">!</b>" next to the file name, as well as a number indicating the amount of conflicts within the file.
+Merge conflicts will appear visually in the Source Control tab on the left-hand taskbar (Branch icon, <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) under a new heading labelled "*Merge Changes*" with a red "<b style="color:red">!</b>" next to the file name, as well as a number indicating the amount of conflicts within the file.
 
 > You can also view merge conflicts using the terminal by running `git status`
 
@@ -840,7 +840,7 @@ Both methods function the same way and achieve the same outcome.
 
 ##### Creating a New Branch through the Visual Studio Code UI
 
-In Visual Studio Code, along the bottom, select the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". This will bring up the list of git branches.
+In Visual Studio Code, along the bottom, select the branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) labelled "*main*". This will bring up the list of git branches.
 
 To create a new branch, select the first option *"**+** Create new branch..."*.
 
@@ -848,7 +848,7 @@ Enter a name for the new branch in the field provided. This will create and swit
 
 > You can also execute *Control + Shift + Period | Command + Shift + Period* or select the search bar at the top of the window and type `> "git create branch"`, then enter a branch name to create a branch
 
-Open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i class="fa-solid fa-code-branch"></i>) and select the blue button labelled "*Publish Branch*" to push the new branch to the remote repository.
+Open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) and select the blue button labelled "*Publish Branch*" to push the new branch to the remote repository.
 
 ##### Creating a New Branch through the Terminal
 
@@ -879,7 +879,7 @@ This will:
 
 On the **EngGit** website, open your project.
 
-To **view your existing branches** or switch to a different branch, select the button underneath the project icon and name with the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". This will list all of your current branches, as well as the default branch. Select any of the listed branches to switch into it.
+To **view your existing branches** or switch to a different branch, select the button underneath the project icon and name with the branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) labelled "*main*". This will list all of your current branches, as well as the default branch. Select any of the listed branches to switch into it.
 
 To **add a new branch**, locate the **+** button underneath the project icon and name, and select "*New branch*" from the dropdown.
 
@@ -891,9 +891,9 @@ To **add a new branch**, locate the **+** button underneath the project icon and
 
 On the **GitHub** website, open your project.
 
-To **view your existing branches** or switch to a different branch, select the button underneath the project icon and name with the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". This will list all of your current branches, as well as the default branch. Select any of the listed branches to switch into it.
+To **view your existing branches** or switch to a different branch, select the button underneath the project icon and name with the branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) labelled "*main*". This will list all of your current branches, as well as the default branch. Select any of the listed branches to switch into it.
 
-To **add a new branch**, select the button underneath the project icon and name with the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". At the bottom of the list of branches, select "*View all branches*". Alternatively, select the link next to the dropdown labelled " <i class="fa-solid fa-code-branch"></i> [x] Branches". This will open the branch manager. In the new window, select the green button in the upper right corner labelled *New branch*
+To **add a new branch**, select the button underneath the project icon and name with the branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) labelled "*main*". At the bottom of the list of branches, select "*View all branches*". Alternatively, select the link next to the dropdown labelled " <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i> [x] Branches". This will open the branch manager. In the new window, select the green button in the upper right corner labelled *New branch*
 
 * Enter a name for the new branch in the field provided, and select an existing branch to create from.
 * * *If you are unsure, create the new branch from "*main*".*
@@ -917,7 +917,7 @@ git branch -a
 
 #### Switching Branches using the Visual Studio Code UI
 
-In Visual Studio Code, along the bottom taskbar, select the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". This will bring up the list of git branches. Select any one of the listed branches to switch into it.
+In Visual Studio Code, along the bottom taskbar, select the branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) labelled "*main*". This will bring up the list of git branches. Select any one of the listed branches to switch into it.
 
 #### Switching Branches using the Terminal
 
@@ -1023,7 +1023,7 @@ git push -d origin <Branch Name>
 
 On the **EngGit** website, open your project.
 
-On the right-hand side of the window, under the heading *Project information*, select the link labelled " <i class="fa-solid fa-code-branch"></i> [x] Branches" to open the branch manager.
+On the right-hand side of the window, under the heading *Project information*, select the link labelled " <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i> [x] Branches" to open the branch manager.
 
 From the list, select the three vertical dots to the right of a branch, and from the dropdown select "**Delete Branch**".
 
@@ -1033,7 +1033,7 @@ Confirm the branches deletion in the popup window that appears by selecting the 
 
 On the **GitHub** website, open your project.
 
-Select the button underneath the project icon and name with the branch icon (<i class="fa-solid fa-code-branch"></i>) labelled "*main*". At the bottom of the list of branches, select "*View all branches*". Alternatively, select the link next to the dropdown labelled " <i class="fa-solid fa-code-branch"></i> [x] Branches". This will open the branch manager.
+Select the button underneath the project icon and name with the branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) labelled "*main*". At the bottom of the list of branches, select "*View all branches*". Alternatively, select the link next to the dropdown labelled " <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i> [x] Branches". This will open the branch manager.
 
 From the list, select the trashcan icon to the right of a branch, to delete the branch.
 
@@ -1357,7 +1357,7 @@ Markdown Syntax Guide: <https://www.markdownguide.org/basic-syntax/>
 
 CSS Preset Colour Names: <https://www.w3schools.com/colors/colors_names.asp>
 
-Source Control Branch Icon <i class="fa-solid fa-code-branch"></i>: <https://fontawesome.com/icons/code-branch?s=solid>
+Source Control Branch Icon <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>: <https://fontawesome.com/icons/code-branch?s=solid>
 
 ---
 
@@ -1368,8 +1368,6 @@ Source Control Branch Icon <i class="fa-solid fa-code-branch"></i>: <https://fon
 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"> <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"> <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"> <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
 ***No AI slop was used in the creation of this document.***
-
-<div style="width: 16px;"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg> </div>
 
 ---
 
