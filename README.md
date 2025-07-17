@@ -482,9 +482,9 @@ Open the Source Control tab on the left-hand taskbar by selecting the Branch ico
 
 > These changes will also be shown within the main File Explorer tab (top of the left-hand taskbar, file icon) within all of the other files, where the entire filename adopts the colours above.
 >
-> * A <span style="background-color:grey;color:white">white</span> filename means it has not been modified.
+> * A <span style="background-color: grey; color: white; padding: 2px; border-radius: 2px">white</span> filename means it has not been modified.
 
-*All files will revert to their <span style="background-color:grey;color:white">white</span> filenames after the changes have been committed and pushed.*
+*All files will revert to their <span style="background-color: grey; color: white; padding: 2px; border-radius: 2px">white</span> filenames after the changes have been committed and pushed.*
 
 ### Viewing Git Changes using the Terminal
 
@@ -733,7 +733,7 @@ Visual Studio Code has two methods of resolving merge conflicts: the *Inline Mer
 
 #### In-Line Editor Method
 
-The *Inline Merge Editor* will open the affected file and highlight differences within the file in either <span style="background-color:aquamarine;color:dimgrey"> green (Aquamarine)</span> for local changes - labelled "*(Current Change)*", or <span style="background-color:cornflowerblue;color:white">blue (Cornflower Blue)</span> for incoming changes - labelled "*(Incoming Change)*".
+The *Inline Merge Editor* will open the affected file and highlight differences within the file in either <span style="background-color:aquamarine; color:dimgrey; padding: 2px; border-radius: 2px"> green (Aquamarine)</span> for local changes - labelled "*(Current Change)*", or <span style="background-color:cornflowerblue; color:white; padding: 2px; border-radius: 2px">blue (Cornflower Blue)</span> for incoming changes - labelled "*(Incoming Change)*".
 
 Merge conflicts within a file can be viewed throughout a file easily by looking at the scrollbar on the right of the window. Blue and green highlights will appear wherever there is a merge conflict within a file.
 
@@ -742,7 +742,7 @@ Four text options will appear above the highlighted text:
 * **Accept Current Change** will overwrite the incoming change with the local change, removing the highlight and inserting the local changes back into the file
 * **Accept Incoming Change** will overwrite the local change with the incoming change, removing the highlight and inserting the remote changes into the file in place of the current changes
 * **Accept Both Changes** will merge both modified sections if possible, removing the highlight and inserting both versions of the section into the file
-* **Compare Changes** will open both the local and remote versions of the file side-by-side to more easily compare changes on the same line. Removed lines will appear highlighted in <span style="background-color:red;color:white">red</span>, whereas added lines will appear highlighted in <span style="background-color:green;color:white">green</span>.
+* **Compare Changes** will open both the local and remote versions of the file side-by-side to more easily compare changes on the same line. Removed lines will appear highlighted in <span style="background-color:red; color:white; padding: 1px; border-radius: 2px">red</span>, whereas added lines will appear highlighted in <span style="background-color:green; color:white; padding: 2px; border-radius: 2px">green</span>.
 
 ***Once all conflicts have been resolved, you must stage the affected files and commit them as a new push.
 The commit message will be autofilled in the format `"Merge Branch '[affected branch]' into '[current branch]'`***
@@ -751,7 +751,7 @@ The commit message will be autofilled in the format `"Merge Branch '[affected br
 
 The *Three-Way Merge Editor* can be accessed by selecting the blue button labelled "*Resolve In Merge Editor*" in the bottom right corner of an open file with merge conflicts.
 
-Merge conflicts within a file can be viewed in the lower window. In the top right of the upper taskbar, a grey button labelled "[*x*] *Conflict(s) Remaining*" will be present listing the amount of conflicts within the file. Clicking this button will take you to the next conflict present in the file.
+Merge conflicts within a file can be viewed in the lower window. In the top right of the upper taskbar, a grey button labelled "[*x*] *Conflict(s) Remaining*" will be present listing the number of conflicts within the file. Clicking this button will take you to the next conflict present in the file.
 
 This will open three separate versions of the file:
 
@@ -759,9 +759,10 @@ This will open three separate versions of the file:
 * The **top right** will display the version of the file with **local changes**
 * The **bottom** window will display the **result** of the merge
 
-The top left and top right windows have the conflicting lines highlighted in <span style="background-color:olivedrab;color:white">green (Olive Drab)</span> in their respective files with three buttons above the affected line.
+The top left and top right windows have the conflicting lines highlighted in <span style="
+-color:olivedrab;color: white; padding: 2px; border-radius: 2px">green (Olive Drab)</span> in their respective files with three buttons above the affected line.
 
-The **top left** (incoming changes) and **top right** (local changes) windows hav the following buttons:
+The **top left** (incoming changes) and **top right** (local changes) windows have the following buttons:
 
 * **Accept Incoming / Current** will select the incoming/current change and place it into the lower window, overwriting the change in the opposite window
 * **Accept Combination** will combine the two changed lines into a single line and place the result into the lower window
@@ -773,7 +774,7 @@ The **bottom** (result) window will have a label indicating where the resulting 
 * **Manual Resolution** will allow you to manually type or edit a line to resolve the conflict
 * **Reset to Base** will remove any lines injected into the result file
 
-Once you have resolved all conflicts in a file and are happy with the state of the result file in the lower window, you can select the blue button labelled "*Complete Merge*" in the bottom right corner the lower window.
+Once you have resolved all conflicts in a file and are happy with the state of the result file in the lower window, you can select the blue button labelled "*Complete Merge*" in the bottom right corner of the lower window.
 
 ***Once all conflicts have been resolved, you must stage the affected files and commit them as a new push.***
 
@@ -1130,11 +1131,11 @@ git rm --cached [Filename]
 
 ## Pushing a Repository to / Hosting on Multiple Remotes
 
-***i.e. Hosting on GitHub and EngGit Simultaneously***
+***i.e., Hosting on GitHub and EngGit Simultaneously***
 
 To push an existing repository to a new remote, you can run the following terminal commands.
 
-* *Be very careful when doing the following, as ensuring each line uses the correct URL and name is very important*
+* *Be very careful when doing the following, as ensuring each line uses the correct URL and name is crucial*
 
 **Step 1)** This will list the current "origin" that we are pushing to:
 
