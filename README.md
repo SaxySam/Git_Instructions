@@ -124,7 +124,7 @@ While the Visual Studio Code implementation provides a very helpful visual guide
 
 **To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced). [*JetBrains Rider*](https://www.jetbrains.com/rider/download/) also has a built-in Markdown previewer similar to the VSCode extension.**
 
-***Each Markdown viewer has its own quirks and handling methods, and as such you may encounter slight version differences depending on the software you use.***
+***Each Markdown viewer has its own quirks and handling methods, and as such, you may encounter slight version differences depending on the software you use.***
 
 * **GitHub** and **GitLab** both have built-in Markdown previews for files named "README.md"; however, both use the custom *GitHub Flavoured Markdown* (GFM) variant of the Markdown format, and as such, some links and extra visibility elements may not function correctly.
 
@@ -144,7 +144,7 @@ Think of it like a cloud storage service like Microsoft's *OneDrive*, allowing y
 Git works by creating a *hidden folder* in the root directory of your project, which keeps track of all files and subsequently each change made to those files locally.
 
 <details>
-<summary><b> How do I view the hidden git folder? </b></summary>
+<summary><b> How do I view the hidden .git folder? </b></summary>
 
 > * This folder can be viewed on Windows systems by navigating to the root directory of the project in the File Explorer, then selecting "View" → "Show" and selecting "Hidden Items" to toggle the visibility of hidden files.
 > * This folder can be viewed on macOS systems by navigating to the root directory of the project in the Finder and executing *Command + Shift + Period* to toggle the visibility of hidden files.
@@ -182,7 +182,7 @@ As such, this document covers steps for practices applicable to both hosts; howe
 
 ### Install Git
 
-Like any software, Git needs to be installed locally to any machine before being able to use it. Git can be downloaded and run on any Windows, MacOS, or Linux device, and can be [downloaded here](https://git-scm.com/downloads).
+Like any software, Git needs to be installed locally to any machine before being able to use it. Git can be downloaded and run on any Windows, macOS, or Linux device, and can be [downloaded here](https://git-scm.com/downloads).
 
 > This will already be installed on University computers.
 
@@ -198,11 +198,11 @@ The second piece of software that is necessary for following through this docume
 > There are many other fantastic tools for managing both code projects and git repositories. I find that VSCode provides the best experience and the most user flexibility; however, other IDEs such as [*Visual Studio Community*](https://visualstudio.microsoft.com/downloads/) or [*JetBrains Rider*](https://www.jetbrains.com/rider/download/) provide similar functionality. *VSCode* and *Rider* also have community extensions that allow you to extend and customise your experience.
 > > If you have a preferred IDE that you're already familiar with, feel free to use that instead, and follow along where possible.
 > 
-> * Most IDEs will have similar if not identical implementations of the features outlined in this document, and as such the knowledge should be mostly transferable; *however*, the layout, steps, and UI may not be the same as described in the VSCode instructions, and may require some experimentation.
+> * Most IDEs will have similar if not identical implementations of the features outlined in this document, and as such, the knowledge should be mostly transferable; *however*, the layout, steps, and UI may not be the same as described in the VSCode instructions, and may require some experimentation.
 > * Terminal commands will function the same *regardless* of the environment they are run in, so there should be no issues following the terminal instructions in different IDEs.
 >
 > There is also the standalone [*GitHub Desktop*](https://desktop.github.com/download/) application for a more streamlined and hands-off approach to git (however, there isn't as much flexibility in some places; a tradeoff to make the introduction to git less technical). 
-> > The terminal can be accessed within GitHub Desktop just like any other IDE by selecting "Repository" -> "Open in Command Prompt / Git Bash" from the toolbar, or by executing *Control + **~** | Command + **~***
+> > The terminal can be accessed within GitHub Desktop just like any other IDE by selecting "Repository" → "Open in Command Prompt / Git Bash" from the toolbar, or by executing `Control + ~` | `Command + ~`
 
 </details>
 
@@ -234,10 +234,10 @@ Gitignore templates for other project structures can be found below. Simply look
 
 *Unreal Engine* uses Visual Studio Community by default. However, if you wish to change the default IDE to Visual Studio Code, you can follow the instructions linked below. *Using Visual Studio Community for code editing and Visual Studio Code for Version Control will **not** cause any problems in your workflow.*
 * Unreal Engine also allows you to connect the project to git directly, automatically staging changed files and allowing you to push from within the editor. You can do this by selecting the "<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i> *Revision Control*" button on the task bar in the bottom left corner of the project window, and selecting "*Connect to Revision Control*" from the list. In the dropdown of providers, select "*Git (Beta Version)*", then select the blue button labelled "*Accept Settings*".
-* > If there is no repository initiatlised in the project directory, a new window will apper allowing you to enter details and create one.
+* > If there is no repository initiatlised in the project directory, a new window will appear, allowing you to enter details and create one.
 * Once revision control has been connected, the source control icon <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i> will have a green checkmark. Hovering over the button will display information about the repository. CLicking the button again will allow you to view and submit (push) changes without leaving the editor window.
 
-> [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
+> [Setting Up VS Code for Unreal Engine — Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
 
 </details>
 
@@ -261,6 +261,8 @@ git init --initial-branch=main
 git config user.name "YOUR-FIRST-NAME"
 git config user.email "YOUR-USER-CODE@uclive.ac.nz"
 git add .gitignore
+git add README.md
+git commit -m "First Commit - Added gitignore and README"
 git commit -m "Added gitignore"
 git push --set-upstream https://eng-git.canterbury.ac.nz/YOUR-USER-CODE/YOUR-REPO-NAME main
 ```
@@ -329,7 +331,7 @@ git push -u origin main
 * > If there is no repository initiatlised in the project directory, a new window will appear, allowing you to enter details and create one.
 * Once revision control has been connected, the source control icon <i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i> will have a green checkmark. Hovering over the button will display information about the repository. CLicking the button again will allow you to view and submit (push) changes without leaving the editor window.
 
-> [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
+> [Setting Up VS Code for Unreal Engine — Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
 
 </details>
 
@@ -358,7 +360,7 @@ git branch -M main
 git remote add origin https://github.com/YOUR-GIT-NAME/YOUR-REPO-NAME.git
 ```
 
-* *The URL for* `git remote add origin` *can be found at the top of a new blank git repo on* [github.com](https://github.com/)
+* *The URL for* `git remote add origin` *can be found at the top of a new blank git repo on* [GitHub.com](https://github.com/)
 
 * *If the Git Credentials Manager window appears, enter your credentials and sign in.*
 
@@ -407,11 +409,11 @@ git push -u origin main
 
 ## Preparing Visual Studio Code for Use with Unity
 
-***Ensure the C# Extension is installed in VSC if using for Unity***
+***Ensure the C# Extension is installed in VSC if used for Unity***
 
 * VSC will automatically prompt you to install the required extension when opening a Unity Project through VSC
 
-* If you need to install the extensions manually, on the left-hand taskbar, select the *Extensions* icon (four squares) to open the Extensions window. Search for "C#" and "Unity", and install the verified extensions published by *Microsoft*
+* If you need to install the extensions manually: On the left-hand taskbar, select the *Extensions* icon (four squares) to open the Extensions window. Search for "C#" and "Unity", and install the verified extensions published by *Microsoft*
 * If you are having difficulties locating the correct extensions, the [*C# Extension*](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) and [*Unity Extension*](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc) can be downloaded online by following these links
 
 **In the extension settings, ensure that "Omnisharp: Use Modern Net" is *DISABLED***
@@ -715,7 +717,7 @@ Merge conflicts will appear visually in the Source Control tab on the left-hand 
 
 > You can also view merge conflicts using the terminal by running `git status`
 
-Sometimes merge conflicts can be easily resolved by simply opting to keep the incoming or local version of a file, or even sometimes manually merging the two versions of a file, for example going through and accepting lines of code from both versions of the changed file to create a new, third file that is an amalgamation of the two prior versions.
+Sometimes merge conflicts can be easily resolved by simply opting to keep the incoming or local version of a file, or even sometimes manually merging the two versions of a file, for example, going through and accepting lines of code from both versions of the changed file to create a new, third file that is an amalgamation of the two prior versions.
 
 Sometimes, however, merge conflicts can be much harder to fix, and can be a serious cause of headaches when multiple merge conflicts appear in your repository at once.
 
@@ -725,7 +727,7 @@ The best way to deal with merge conflicts, of course, is to *avoid them altogeth
 
 Merge conflicts can be resolved using both the Visual Studio Code UI and the terminal; however, the UI gives a much better visual representation of what files are conflicting, as well as viewing possible errors that could come as a result of merging. This provides ***much easier*** control over which parts of a file to accept in a merge. As such, it is highly recommended to resolve merge conflicts this way.
 
-> To reset or restart a merge, you can execute *Control + Shift + Period | Command + Shift + Period* or select the select the search bar at the top of the window and type `> "git abort merge"` to reset your directory back to the state it was in before the merge was started.
+> To reset or restart a merge, you can execute `Control + Shift + Period` | `Command + Shift + Period` or select the select the search bar at the top of the window and type `> "git abort merge"` to reset your directory back to the state it was in before the merge was started.
 
 ### Dealing with Merge Conflicts using the Visual Studio Code UI
 
@@ -759,8 +761,7 @@ This will open three separate versions of the file:
 * The **top right** will display the version of the file with **local changes**
 * The **bottom** window will display the **result** of the merge
 
-The top left and top right windows have the conflicting lines highlighted in <span style="
--color:olivedrab;color: white; padding: 2px; border-radius: 2px">green (Olive Drab)</span> in their respective files with three buttons above the affected line.
+The top left and top right windows have the conflicting lines highlighted in <span style="background-color:olivedrab; color: white; padding: 2px; border-radius: 2px">green (Olive Drab)</span> in their respective files with three buttons above the affected line.
 
 The **top left** (incoming changes) and **top right** (local changes) windows have the following buttons:
 
@@ -774,7 +775,7 @@ The **bottom** (result) window will have a label indicating where the resulting 
 * **Manual Resolution** will allow you to manually type or edit a line to resolve the conflict
 * **Reset to Base** will remove any lines injected into the result file
 
-Once you have resolved all conflicts in a file and are happy with the state of the result file in the lower window, you can select the blue button labelled "*Complete Merge*" in the bottom right corner of the lower window.
+Once you have resolved all conflicts in a file and are happy with the state of the result file, you can integrate and commit the changes and reintegrate the file. In the lower window, you can select the blue button labelled "*Complete Merge*" in the bottom right corner of the lower window to save the changes.
 
 ***Once all conflicts have been resolved, you must stage the affected files and commit them as a new push.***
 
@@ -847,13 +848,13 @@ To create a new branch, select the first option *"**+** Create new branch..."*.
 
 Enter a name for the new branch in the field provided. This will create and switch into a new branch.
 
-> You can also execute *Control + Shift + Period | Command + Shift + Period* or select the search bar at the top of the window and type `> "git create branch"`, then enter a branch name to create a branch
+> You can also execute `Control + Shift + Period` | `Command + Shift + Period` or select the search bar at the top of the window and type `> "git create branch"`, then enter a branch name to create a branch
 
 Open the Source Control tab on the left-hand taskbar by selecting the Branch icon (<i style="display: inline-block; width: 12px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path style="fill: currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>) and select the blue button labelled "*Publish Branch*" to push the new branch to the remote repository.
 
 ##### Creating a New Branch through the Terminal
 
-In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal" to open a new terminal.
+In Visual Studio Code, along the top toolbar, click "Terminal" → "New Terminal" to open a new terminal.
 
 > This should ideally be a PowerShell or (Git)Bash terminal to avoid platform-specific syntax errors and inconsistencies.
 
@@ -938,11 +939,11 @@ git switch <Branch Name>
 
 If you want to rename a branch, there are slightly different methods than must be taken depending on whether the branch is local only, or whether it has been pushed to a remote already.
 
-> Its best to ensure you name branches correctly the first time to avoid having to rename them. Check the name before publishing the branch so that in the case you do need to rename it, you only need to change the local name.
+> It's best to ensure you name branches correctly the first time to avoid having to rename them. Check the name before publishing the branch so that in case you do need to rename it, you only need to change the local name.
 
 #### Renaming Branches using the Visual Studio Code UI
 
-To rename a branch, execute *Control + Shift + Period | Command + Shift + Period* or select the search bar at the top of the window and type `> "git rename branch"`, then enter a branch name to rename the current branch.
+To rename a branch, execute `Control + Shift + Period` | `Command + Shift + Period` or select the search bar at the top of the window and type `> "git rename branch"`, then enter a branch name to rename the current branch.
 
 This will rename the current branch to the new entered name, however it will only rename it locally. To rename it on the remote, you will need to execute some terminal commands, which are listed in the following section.
 
@@ -964,7 +965,7 @@ This allows you to rename the branch in one line without needing to switch into 
 
 To rename a **remote branch** (one that ***has*** been pushed) such that both the local and remotes are updated, you need to run some extra command lines:
 
-> It may help to run `git branch -a` to view the names of local and remote branches to ensure that branches are being named correclty
+> It may help to run `git branch -a` to view the names of local and remote branches to ensure that branches are being named correctly
 
 **Step 1)** First, run the following commands to change the local remote name as above:
 
@@ -998,7 +999,7 @@ This will update a branch name both locally and when viewed on the remote reposi
 
 ##### Deleting Branches using the Visual Studio Code UI
 
-To delete a branch, execute *Control + Shift + Period | Command + Shift + Period* or select the search bar at the top of the window and type `> "git delete branch"`, then select a branch to delete from the list
+To delete a branch, execute `Control + Shift + Period` | `Command + Shift + Period` or select the search bar at the top of the window and type `> "git delete branch"`, then select a branch to delete from the list
 
 > This list will ***not*** show the currently selected branch. If the desired branch isn't showing, switch back to main and try again
 
@@ -1040,7 +1041,7 @@ From the list, select the trashcan icon to the right of a branch, to delete the 
 
 * If you attempt to delete the main branch, a popup will appear in the bottom left corner stating "*You can't delete the default branch.*"
 
-> There will be no confirmation for deletion of branches, so **be careful**
+> There will be no confirmation for the deletion of branches, so **be careful**
 
 ---
 
@@ -1055,7 +1056,7 @@ To fix this, install **GIT LFS** and use it to track and push the large files se
 > Be aware that sites such as GitHub have a limit on the amount of storage held in LFS without a charge.
 ***Use wisely.***
 >
-> * [About Git Large File Storage - GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
+> * [About Git Large File Storage — GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
 
 Enter the following commands line by line:
 
@@ -1106,7 +1107,7 @@ To ignore a file, you can add its filepath to the .gitignore directly, or use on
 # but do track lib.a, even though you're ignoring .a files above
 !lib.a
 
-# only ignore the TODO file in the current directory, not subdir/TODO
+# only ignore the TODO file in the current directory, not subdir
 /TODO
 
 # ignore all files in any directory named build
@@ -1222,7 +1223,7 @@ git push --all origin
 </details>
 <br>
 
-> Adapted from: [*Pushing to multiple git remotes simultaneously by Jeff Kreeftmeijer*](https://jeffkreeftmeijer.com/git-multiple-remotes/#fnr.2)
+> Adapted from: [*Pushing to multiple git remotes simultaneously — Jeff Kreeftmeijer*](https://jeffkreeftmeijer.com/git-multiple-remotes/#fnr.2)
 
 ---
 
@@ -1243,10 +1244,9 @@ Migrating a repository will bring everything within the project, including all f
 <details>
 <summary><b> Why do I need to enter my credentials? </b></summary>
 
-> This is essential as your EngGit account is protected by the University of Canterbury, and as such, you cannot make repositories public; as repositories hosted on EngGit can *only* be accessed by University of Canterbury personnel. If simply importing from GitLab itself, you may not need to do this.
+> This is essential as your EngGit account is protected by the University of Canterbury, and as such, you cannot make the repository public; as repositories hosted on EngGit can *only* be accessed by University of Canterbury personnel. If simply importing from GitLab itself, you may not need to do this.
 
 </details>
-<br>
 
 Under the heading "**Your new repository details**", set the **name of the project** in the field labelled "*Repository name*".
 
