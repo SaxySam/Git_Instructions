@@ -23,8 +23,8 @@
 3. [Forward](#forward)
 4. [Viewing this Document](#viewing-this-document)
 5. [What is Git?](#what-is-git)
-    * [How Git Works](#how-git-works)
-    * [What is a Repository](#what-is-a-repository)
+    * [How Does Git Work?](#how-does-git-work)
+    * [What is a Repository?](#what-is-a-repository)
 6. [Pre-Setup](#pre-setup)
     * [Install Git](#install-git)
     * [Install Visual Studio Code](#install-visual-studio-code)
@@ -114,7 +114,7 @@
 
 This document outlines steps and instructions for using git to manage both solo and collaborative projects, from an explanation and setup to covering some of the most commonly encountered problems. It details instructions using both Visual Studio Code and the terminal, as well as instructions for the two most common repository hosting websites: GitLab (EngGit) and GitHub. Think of it like a cheat sheet or reference for anything git related.
 
-While the Visual Studio Code implementation provides a very helpful visual guide, the terminal commands often allow more control and flexibility. As such, some sections of this document are only able to be followed by using the terminal, as the UI lacks a direct counterpart.
+While the Visual Studio Code implementation provides a very helpful visual guide, the terminal commands often allow more control and flexibility. As such, some sections of this document are only able to be followed using the terminal, as the UI lacks a direct counterpart.
 
 > Note: Only some Visual Studio Code steps may be able to be recreated within other IDEs, while *all* terminal commands will be able to run within other IDEs or outside of one entirely. Keep this in mind when using different or unfamiliar software.
 
@@ -122,9 +122,9 @@ While the Visual Studio Code implementation provides a very helpful visual guide
 
 ## Viewing this Document
 
-**To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced). [*JetBrains Rider*](https://www.jetbrains.com/rider/download/) also has a built-in markdown previewer similar to the VSCode extension.**
+**To view this file properly, please open it in a Markdown format file viewer, such as [*Obsidian*](https://obsidian.md/). An *online Markdown file viewer* can be [found here](https://markdownlivepreview.com/), and an *extension for Visual Studio Code* can be [found here](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced). [*JetBrains Rider*](https://www.jetbrains.com/rider/download/) also has a built-in Markdown previewer similar to the VSCode extension.**
 
-***Each markdown viewer has its own quirks and handling methods, and as such you may encounter slight version differences depending on the software you use.***
+***Each Markdown viewer has its own quirks and handling methods, and as such you may encounter slight version differences depending on the software you use.***
 
 * **GitHub** and **GitLab** both have built-in Markdown previews for files named "README.md"; however, both use the custom *GitHub Flavoured Markdown* (GFM) variant of the Markdown format, and as such, some links and extra visibility elements may not function correctly.
 
@@ -137,19 +137,19 @@ While the Visual Studio Code implementation provides a very helpful visual guide
 
 *Git* is an open-source version control system that allows users to work independently or collaboratively on a project across multiple devices while maintaining changes made to a project between devices and users.
 
-Think of it like a cloud storage service like Microsoft's *OneDrive*, allowing you to upload and download changes. The key difference being that git offers a much wider range of flexibility and control over which files are uploaded, the way files are uploaded, as well as providing numerous usages and ways of modifying files for different projects.
+Think of it like a cloud storage service like Microsoft's *OneDrive*, allowing you to upload and download changes. The key difference is that git offers a much wider range of flexibility and control over which files are uploaded, the way files are uploaded, as well as providing many usages and ways of modifying files for different projects.
 
-### How Git Works?
+### How does Git Work?
 
 Git works by creating a *hidden folder* in the root directory of your project, which keeps track of all files and subsequently each change made to those files locally.
 
 <details>
 <summary><b> How do I view the hidden git folder? </b></summary>
 
-> * This folder can be viewed on Windows systems by navigating to the root directory of the project in the File Explorer, then selecting "View" > "Show", and selecting "Hidden Items" to toggle the visibility of hidden files.
-> * This folder can be viewed on MacOS systems by navigating to the root directory of the project in the Finder and executing *Command + Shift + Period* to toggle the visibility of hidden files.
+> * This folder can be viewed on Windows systems by navigating to the root directory of the project in the File Explorer, then selecting "View" → "Show" and selecting "Hidden Items" to toggle the visibility of hidden files.
+> * This folder can be viewed on macOS systems by navigating to the root directory of the project in the Finder and executing *Command + Shift + Period* to toggle the visibility of hidden files.
 > * This folder can be viewed on Linux systems in the GUI by navigating to the root directory of the project in the File Manager, selecting "Menu" or "View" (depending on distribution), and then selecting "Show Hidden Files"
-    >   * Alternatively, the `ls -a` terminal command will list all files in a directory, including hidden files
+> * * Alternatively, the `ls -a` terminal command will list all files in a directory, including hidden files
 
 * A greyed out folder titled ".git" should appear in the root directory using any of the three methods listed above, or in the command output if using the terminal.
 
@@ -226,14 +226,14 @@ Gitignore templates for other project structures can be found below. Simply look
 
 **Step 1)** Open the Unity Project in Visual Studio Code. There are two ways to do this:
 
-1. In Visual Studio Code: File -> Open Folder -> (Directory of the project) -> Open.
-2. In *Unity*, go to File -> "Preferences" and ensure that under "External Tools", Visual Studio Code is selected as your External Script Editor. Next, right-click in the Assets window and click "Open C# Project". This will open the entire project in Visual Studio Code and prompt you to install the required [*C# Extension*](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) and [*Unity Extension*](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc).
+1. In Visual Studio Code: File → Open Folder → (Directory of the project) → Open.
+2. In *Unity*, go to File → "Preferences" and ensure that under "External Tools", Visual Studio Code is selected as your External Script Editor. Next, right-click in the Assets window and click "Open C# Project". This will open the entire project in Visual Studio Code and prompt you to install the required [*C# Extension*](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) and [*Unity Extension*](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc).
 
 <details>
 <summary><b> What about Unreal Engine? </b></summary>
 
 *Unreal Engine* uses Visual Studio Community by default. However, if you wish to change the default IDE to Visual Studio Code, you can follow the instructions linked below. *Using Visual Studio Community for code editing and Visual Studio Code for Version Control will **not** cause any problems in your workflow.*
-* Unreal Engine also allows you to connect the project to git directly, automatically staging changed files and allowing you to push from within the editor. You can do this by selecting the "<i class="fa-solid fa-code-branch"></i> *Revision Control*" button on the task bar in in the bottom left corner of the project window, and selecting "*Connect to Revision Control*" from the list. In the dropdown of providers, select '*Git (Beta Version)*", then select the blue botton labelled "*Accept Settings*".
+* Unreal Engine also allows you to connect the project to git directly, automatically staging changed files and allowing you to push from within the editor. You can do this by selecting the "<i class="fa-solid fa-code-branch"></i> *Revision Control*" button on the task bar in the bottom left corner of the project window, and selecting "*Connect to Revision Control*" from the list. In the dropdown of providers, select "*Git (Beta Version)*", then select the blue button labelled "*Accept Settings*".
 * > If there is no repository initiatlised in the project directory, a new window will apper allowing you to enter details and create one.
 * Once revision control has been connected, the source control icon <i class="fa-solid fa-code-branch"></i> will have a green checkmark. Hovering over the button will display information about the repository. CLicking the button again will allow you to view and submit (push) changes without leaving the editor window.
 
@@ -241,11 +241,11 @@ Gitignore templates for other project structures can be found below. Simply look
 
 </details>
 
-**Step 2)** In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal".
+**Step 2)** In Visual Studio Code, along the top toolbar, click "Terminal" → "New Terminal".
 
 > This should ideally be a PowerShell or (Git)Bash terminal to avoid platform-specific syntax errors and inconsistencies.
 
-**Step 3)**  Initialize the Repository by running the following terminal commands line by line:
+**Step 3)** Initialise the Repository by running the following terminal commands line by line:
 
 * Make sure you are within the desired folder before initialising the repository, otherwise it will create in the root of the user directory*
 
@@ -314,19 +314,19 @@ git push -u origin main
 
 ### Creating a new Repository on GitHub using Visual Studio Code
 
-**Step 1)** Create a new repository on [github.com](https://github.com/)
+**Step 1)** Create a new repository on [GitHub.com](https://github.com/)
 
 **Step 2)** Open the Unity Project in Visual Studio Code. There are two ways to do this:
 
-1. In Visual Studio Code: File -> Open Folder -> (Directory of the project) -> Open.
-2. In *Unity*, go to File -> "Preferences" and ensure that under "External Tools", Visual Studio Code is selected as your External Script Editor. Next, right-click in the Assets window and click "Open C# Project". This will open the entire project in Visual Studio Code and prompt you to install the required [*C# Extension*](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) and [*Unity Extension*](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc).
+1. In Visual Studio Code: File → Open Folder → (Directory of the project) → Open.
+2. In *Unity*, go to File → "Preferences" and ensure that under "External Tools", Visual Studio Code is selected as your External Script Editor. Next, right-click in the Assets window and click "Open C# Project". This will open the entire project in Visual Studio Code and prompt you to install the required [*C# Extension*](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) and [*Unity Extension*](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc).
 
 <details>
 <summary><b> What about Unreal Engine? </b></summary>
 
 *Unreal Engine* uses Visual Studio Community by default. However, if you wish to change the default IDE to Visual Studio Code, you can follow the instructions linked below. *Using Visual Studio Community for code editing and Visual Studio Code for Version Control will **not** cause any problems in your workflow.*
-* Unreal Engine also allows you to connect the project to git directly, automatically staging changed files and allowing you to push from within the editor. You can do this by selecting the "<i class="fa-solid fa-code-branch"></i> *Revision Control*" button on the task bar in in the bottom left corner of the project window, and selecting "*Connect to Revision Control*" from the list. In the dropdown of providers, select '*Git (Beta Version)*", then select the blue botton labelled "*Accept Settings*".
-* > If there is no repository initiatlised in the project directory, a new window will apper allowing you to enter details and create one.
+* Unreal Engine also allows you to connect the project to git directly, automatically staging changed files and allowing you to push from within the editor. You can do this by selecting the "<i class="fa-solid fa-code-branch"></i> *Revision Control*" button on the task bar in the bottom left corner of the project window, and selecting "*Connect to Revision Control*" from the list. In the dropdown of providers, select "*Git (Beta Version)*", then select the blue button labelled "*Accept Settings*".
+* > If there is no repository initiatlised in the project directory, a new window will appear, allowing you to enter details and create one.
 * Once revision control has been connected, the source control icon <i class="fa-solid fa-code-branch"></i> will have a green checkmark. Hovering over the button will display information about the repository. CLicking the button again will allow you to view and submit (push) changes without leaving the editor window.
 
 > [Setting Up VS Code for Unreal Engine - Epic Games Documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-visual-studio-code-for-unreal-engine)
@@ -434,6 +434,7 @@ This will be in the format:
 ***or***
 
 *<https://github.com/YOUR-USERNAME/YOUR-REPO-NAME>* for **GitHub**.
+
 
 > This can be found on the **EngGit** website by opening a project, clicking the dropdown arrow on the large blue "Code" button, and copying the "Clone with HTTPS" link.
 >
@@ -694,7 +695,7 @@ In Visual Studio Code, open the Source Control tab on the left-hand taskbar (Bra
 
 ### Pulling Using the Terminal
 
-In Visual Studio Code, along the top toolbar, click "Terminal" -> "New Terminal" to open a new terminal.
+In Visual Studio Code, along the top toolbar, click "Terminal" → "New Terminal" to open a new terminal.
 
 > This should ideally be a PowerShell or (Git)Bash terminal to avoid platform-specific syntax errors and inconsistencies.
 
@@ -708,9 +709,9 @@ git pull
 
 ## Dealing with Clashes and Merge Conflicts
 
-Sometimes, when the same file has been worked on across devices or users without pulling local changes before attempting to push, you may run into ***Merge Conflicts*** where there exist two versions of the same file within git, and the repository doesn't know which one to use. The two files exist in *superposition* of two states at once until resolved.
+Sometimes, when the same file has been worked on across devices or users without pulling local changes before attempting to push, you may run into ***Merge Conflicts*** where there exist two versions of the same file within git. When this occurs, the repository doesn't know which one to use. The two files exist in *superposition* of two states at once until resolved.
 
-Merge conflicts will appear visually in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>) under a new heading labelled "*Merge Changes*" with a red <b style="color:red">!</b> next to the file name, as well as a number indicating the amount of conflicts within the file.
+Merge conflicts will appear visually in the Source Control tab on the left-hand taskbar (Branch icon, <i class="fa-solid fa-code-branch"></i>) under a new heading labelled "*Merge Changes*" with a red "<b style="color:red">!</b>" next to the file name, as well as a number indicating the amount of conflicts within the file.
 
 > You can also view merge conflicts using the terminal by running `git status`
 
@@ -720,7 +721,7 @@ Sometimes, however, merge conflicts can be much harder to fix, and can be a seri
 
 The best way to deal with merge conflicts, of course, is to *avoid them altogether*. This is why it's important to pull remote changes before uploading new local changes, to ensure that you aren't overwriting a file locally that someone else has already updated remotely. Always do your best to sync the most recent changes to a file before editing it yourself.
 
-* When working in a group, it is especially important to follow this and to ensure that multiple people aren't working on the same file at the same time, as this could lead to serious loss of work for one or both parties. Files beyond those that can be easily changed in a text editor are much harder to resolve through a merge without some loss of data.
+* When working in a group, it is especially important to follow this and to ensure that multiple people aren't working on the same file at the same time. This could lead to serious loss of work for one or both parties. Files beyond those that can be easily changed in a text editor are much harder to resolve through a merge without some loss of data.
 
 Merge conflicts can be resolved using both the Visual Studio Code UI and the terminal; however, the UI gives a much better visual representation of what files are conflicting, as well as viewing possible errors that could come as a result of merging. This provides ***much easier*** control over which parts of a file to accept in a merge. As such, it is highly recommended to resolve merge conflicts this way.
 
@@ -1367,6 +1368,8 @@ Source Control Branch Icon <i class="fa-solid fa-code-branch"></i>: <https://fon
 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"> <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"> <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"> <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
 ***No AI slop was used in the creation of this document.***
+
+<div style="width: 16px;"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 87.8c18.8-10.9 40.7-17.1 64-17.1l96 0c35.3 0 64-28.7 64-64l0-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 6.7c0 70.7-57.3 128-128 128l-96 0c-35.3 0-64 28.7-64 64l0 6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3l0-6.7 0-198.7C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg> </div>
 
 ---
 
