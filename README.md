@@ -60,13 +60,13 @@
 16. [Pulling Changes](#pulling-changes)
     * [Pulling Using the Visual Studio Code UI](#pulling-using-the-visual-studio-code-ui)
     * [Pulling Using the Terminal](#pulling-using-the-terminal)
-17. [Dealing with Clashes and Merge Conflicts](#dealing-with-clashes-and-merge-conflicts)
+17. [Adding Collaborators to a Repository](#adding-collaborators-to-a-repository)
+    * [Adding Collaborators on EngGit](#adding-collaborators-on-enggit)
+    * [Adding Collaborators on GitHub](#adding-collaborators-on-github)
+18. [Dealing with Clashes and Merge Conflicts](#dealing-with-clashes-and-merge-conflicts)
     * [Dealing with Merge Conflicts using the Visual Studio Code UI](#dealing-with-merge-conflicts-using-the-visual-studio-code-ui)
         * [In-Line Editor Method](#in-line-editor-method)
         * [Three-Way Editor Method](#three-way-editor-method)
-18. [Adding Collaborators to a Repository](#adding-collaborators-to-a-repository)
-    * [Adding Collaborators on EngGit](#adding-collaborators-on-enggit)
-    * [Adding Collaborators on GitHub](#adding-collaborators-on-github)
 19. [Changing a Git Commit Message](#changing-a-git-commit-message)
 20. [Git Branches](#git-branches)
     * [Creating New Branches](#creating-new-branches)
@@ -709,6 +709,24 @@ git pull
 
 ---
 
+## Adding Collaborators to a Repository
+
+### Adding Collaborators On EngGit
+
+On the EngGit website, open your project. On the left-hand panel, hover over "Manage" and select "Members", and in the popup menu, enter the person's user code or name. Once the account has been found, you can select their *Role* in the project. Click "Add [*name*]" to invite them to the project.
+> If you intend to have them contribute to the project, select the *Developer* Role.
+> You can also provide an expiry date for their access to the project. Unless specified otherwise, leave this blank.
+
+### Adding Collaborators On GitHub
+
+On the GitHub website, open your project. Along the top bar, click the "Settings" button, then along the left-hand panel, under the "Access" heading, select "Collaborators".
+
+> Here, you can manage the visibility of your repository (Public / Private) to allow anyone to view the project, or invite specific accounts to grant them access.
+
+Select "Add People", then enter their username, name, or email in the pop-up menu. Once the account has been found, select the desired person and click "Add [*name*]" to invite them to the project.
+
+---
+
 ## Dealing with Clashes and Merge Conflicts
 
 Sometimes, when the same file has been worked on across devices or users without pulling local changes before attempting to push, you may run into ***Merge Conflicts*** where there exist two versions of the same file within git. When this occurs, the repository doesn't know which one to use. The two files exist in *superposition* of two states at once until resolved.
@@ -780,24 +798,6 @@ Once you have resolved all conflicts in a file and are happy with the state of t
 ***Once all conflicts have been resolved, you must stage the affected files and commit them as a new push.***
 
 ***The commit message will be autofilled in the format `"Merge Branch '[affected branch]' into [current branch]`***
-
----
-
-## Adding Collaborators to a Repository
-
-### Adding Collaborators On EngGit
-
-On the EngGit website, open your project. On the left-hand panel, hover over "Manage" and select "Members", and in the popup menu, enter the person's user code or name. Once the account has been found, you can select their *Role* in the project. Click "Add [*name*]" to invite them to the project.
-> If you intend to have them contribute to the project, select the *Developer* Role.
-> You can also provide an expiry date for their access to the project. Unless specified otherwise, leave this blank.
-
-### Adding Collaborators On GitHub
-
-On the GitHub website, open your project. Along the top bar, click the "Settings" button, then along the left-hand panel, under the "Access" heading, select "Collaborators".
-
-> Here, you can manage the visibility of your repository (Public / Private) to allow anyone to view the project, or invite specific accounts to grant them access.
-
-Select "Add People", then enter their username, name, or email in the pop-up menu. Once the account has been found, select the desired person and click "Add [*name*]" to invite them to the project.
 
 ---
 
